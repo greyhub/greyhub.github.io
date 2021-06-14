@@ -13,7 +13,7 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
-<body class="is-preload">
+<body class="is-preload" >
 
     
         <div id="wrapper">
@@ -30,9 +30,37 @@
                         <div class="inner">
                             <h1><a href="../index.html">
                                 <span class="fas fa-home"></span> </a></h1>
-                            <p>
-                                Nothing to see here
-                            </p>
+                            <span id="content"></span><span style="height:20px;width:20px;background-color:#ffffff79;">&nbsp;</span>
+                            <script>
+                            var menu = [
+                                "HI BAE",
+                                " ",
+                                "I AM GREY",
+                                "FROM VIET NAM",
+                                " ",
+                                "WELCOME TO THE GREY'S WORLD!",
+                                ],
+                                i = 0, j, item, html,
+                                e = document.getElementById("content"),
+                                doChar = function() {
+                                e.innerHTML += item[j++];
+                                if (j < item.length) {
+                                    setTimeout(doChar, 100);
+                                }
+                                else {
+                                    e.innerHTML += "<br/>";
+                                    doItem();
+                                }
+                                },
+                                doItem = function() {
+                                if (i < menu.length) {
+                                    item = menu[i++];
+                                    j = 0;
+                                    doChar();
+                                }
+                                };
+                            doItem();
+                            </script>
                         </div>
                     </div>
                 </header>

@@ -14,54 +14,75 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
+
 <body class="is-preload">
+    <div id="wrapper">
+        <header id="header">
+            <!-- LOGO  -->
+            <div class="logo">
+                <span class="icon">
+                    <img src=images/greylogo.png>
+                </span>
+            </div>
 
-    
-        <div id="wrapper">
-                <header id="header">
-                    <!-- LOGO  -->
-                    <div class="logo">
-                        <span class="icon">
-                            <img src=images/greylogo.png>
-                        </span>
-                    </div>
-                    <div class="content">
-                        <div class="inner">
-                            <h1>Grey Blog</h1>
-                            <p>Just nothin'</p>
-                        </div>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html"> 
-                                <span class="fas fa-home"></span> </a></li>
-                            <li><a href="fun/index.html">4Fun</a></li>
-                            <li><a href="about/index.html">About</a></li>
-                        </ul>
-                    </nav>
-                </header>
-            
-                <div id="main">
+            <!-- CONTENT -->
+            <div class="content">
+                <div class="inner">
+                    <h1>Grey Blog</h1>
+                    <span id="content"></span><span style="height:20px;width:20px;background-color:#ffffff79;">&nbsp;</span>
+                    <script>
+                        var menu = [
+                            "Hi Bae",
+                            "Welcome to Grey's world!",
+                            ],
+                            i = 0, j, item, html,
+                            e = document.getElementById("content"),
+                            doChar = function() {
+                            e.innerHTML += item[j++];
+                            if (j < item.length) {
+                                setTimeout(doChar, 100);
+                            }
+                            else {
+                                e.innerHTML += "<br/>";
+                                doItem();
+                            }
+                            },
+                            doItem = function() {
+                            if (i < menu.length) {
+                                item = menu[i++];
+                                j = 0;
+                                doChar();
+                            }
+                            };
+                        doItem();
+                        </script>
                 </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"> 
+                        <span class="fas fa-home"></span> </a></li>
+                    <li><a href="fun/index.html">4Fun</a></li>
+                    <li><a href="about/index.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="main"></div>
 
-                
-            <footer id="footer">
-                <p class="copyright">&copy; Author: <a href="https://github.com/greyhub">Mr.Grey</a>.</p>
-            </footer>
-
-        </div>
-
-    
+        <footer id="footer">
+            <p class="copyright">&copy; Author: <a href="https://github.com/greyhub">Mr.Grey</a>.</p>
+        </footer>
+    </div>
     <div id="bg"></div>
 
 </body>
 
 
-    
-    <script src=assets/js/jquery.min.js></script>
-    <script src=assets/js/browser.min.js></script>
-    <script src=assets/js/breakpoints.min.js></script>
-    <script src=assets/js/util.js></script>
-    <script src=assets/js/main.js></script>
+<script src=assets/js/jquery.min.js></script>
+<script src=assets/js/browser.min.js></script>
+<script src=assets/js/breakpoints.min.js></script>
+<script src=assets/js/util.js></script>
+<script src=assets/js/main.js></script>
 
 </html>

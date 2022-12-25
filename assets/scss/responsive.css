@@ -1,0 +1,1741 @@
+/*--- 1. Google Font ---*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*--- 2. Font Family ---*/
+/*--- Colors variable ---*/
+/*--- 4. All Extend Classes in here ---*/
+.section-top-spacing {
+  padding-top: 14rem;
+  padding-bottom: 7rem;
+}
+
+.section-spacing {
+  padding: 7rem 0;
+}
+
+.header-area nav.main-nav ul.primary-menu li a {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+  padding: 1.5rem 0;
+  position: relative;
+  cursor: pointer;
+}
+.header-area nav.main-nav ul.primary-menu li a:hover {
+  color: #ffb400;
+}
+
+.header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li a {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+  padding: 0.75rem 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+.header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li a:hover {
+  color: #ffb400;
+}
+
+.header-area .header-btn .primary-btn {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  background: #1F2044;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  line-height: 1.8rem;
+  letter-spacing: normal;
+  padding: 1rem 2rem;
+}
+.header-area .header-btn .primary-btn:hover {
+  color: #FFFFFF;
+  background: #ffb400;
+}
+
+.header-top ul li a i::before {
+  font-size: 1.8rem;
+  color: #1F2044;
+  background: #FFFFFF;
+  padding: 0.5rem;
+  border-radius: 5rem;
+  vertical-align: middle;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.header-top ul li a i:hover::before {
+  background-color: #fff;
+  color: #1F2044;
+}
+
+.header-top ul.topbar-support li a i:before {
+  font-size: 2rem;
+  color: #FFF;
+  background: transparent;
+  padding: 1rem;
+  margin: 0;
+}
+.header-top ul.topbar-support li a i:hover:before {
+  color: #FFF;
+  background: transparent;
+}
+
+/*===== Section Main Title CSS =====*/
+/*===== Section Main Title CSS =====*/
+.service-item-style .box_innerContent h3 a {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin: 0;
+  letter-spacing: normal;
+  font-style: normal;
+}
+.service-item-style .box_innerContent h3 a span {
+  color: red;
+  opacity: 0.8;
+}
+
+.blog-box-style .blog-content p, .service-item-style .box_innerContent p {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/*===== Animated btn CSS =====*/
+.animated-btn {
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.animated-btn .pikachu {
+  max-width: 10rem;
+  height: 10rem;
+  position: absolute;
+  bottom: 0;
+  background: transparent !important;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.animated-btn .pikachu img {
+  background: transparent !important;
+}
+.animated-btn .active {
+  transform: translateY(-0.8rem);
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.animated-btn .btn-submit {
+  position: absolute;
+  background: chocolate;
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 0.1px;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background 0.5s;
+  overflow: hidden;
+}
+
+/*===== Animated btn CSS =====*/
+/*===== Service Item CSS =====*/
+.service-item-style {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.service-item-style:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.service-item-style:hover .box_innerContent a.btn_learnMore {
+  letter-spacing: 0.75px;
+  color: #ffb400;
+}
+.service-item-style:hover .box_innerContent a.btn_learnMore i:before {
+  color: #ffb400;
+}
+.service-item-style .box_innerIcon {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.service-item-style .box_innerIcon i {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 7rem;
+  align-items: center;
+  color: #e5e5e5;
+  justify-content: center;
+  margin: 0;
+  border-radius: 1rem;
+  background: #1F2044;
+}
+.service-item-style .box_innerContent h3 a {
+  margin-bottom: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.service-item-style .box_innerContent h3 a:hover {
+  color: #ffb400;
+}
+.service-item-style .box_innerContent p {
+  margin: 1rem 0 2rem 0;
+}
+.service-item-style .box_innerContent a.btn_learnMore {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0;
+  transition: 0s;
+  transition: all 0.3s ease-in-out;
+}
+.service-item-style .box_innerContent a.btn_learnMore i:before {
+  font-family: Flaticon;
+  font-size: 1rem;
+  font-weight: 900 !important;
+  font-style: normal;
+  background: transparent;
+  opacity: 0.8;
+  padding: 0 0.3rem;
+  vertical-align: middle;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Caption element-item */
+.element-item {
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+.element-item img {
+  width: 100%;
+}
+.element-item .caption {
+  box-sizing: border-box;
+  position: absolute;
+  width: 80%;
+  height: 23rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  margin: 0px auto;
+  background: rgba(16, 20, 87, 0.8);
+  color: #FFFFFF;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  transition: all 0.8s ease-out;
+  transform: translateY(100%);
+}
+.element-item .caption h5 {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin: 15px 0 0 0;
+}
+.element-item .caption p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: normal;
+  padding: 0;
+  margin-top: 1rem;
+}
+.element-item .caption a.btn-primary {
+  border-radius: 0.5rem;
+  padding: 0.8rem 2rem;
+  text-align: center;
+  margin: 1.5rem 0 0 0;
+  background: #FFFFFF;
+  color: #1F2044;
+  font-size: 1.4rem;
+  font-weight: 600s;
+  transition: all 0.3s ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+.element-item .caption a.btn-primary:hover {
+  background: #101357;
+  color: #FFFFFF;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 2px 8px 0px;
+}
+.element-item:hover .caption {
+  transform: translateY(0);
+}
+
+/*===== Service Item CSS =====*/
+/*===== BLOG BOX CSS =====*/
+.blog-box-style {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+.blog-box-style:hover .blog-img img {
+  transform: scale(1.1) rotate(3deg);
+}
+.blog-box-style .blog-img {
+  overflow: hidden;
+  width: 100%;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.blog-box-style .blog-img img {
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  height: auto;
+}
+.blog-box-style .blog-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+.blog-box-style .blog-content:hover h4 {
+  color: #ffb400;
+}
+.blog-box-style .blog-content a h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  line-height: 3rem;
+  transition: all 0.5s ease-in-out;
+}
+.blog-box-style .blog-content p {
+  margin: 0;
+  padding-top: 1.5rem;
+}
+.blog-box-style .blog-content .readMore_btn {
+  color: #FFF;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  background: #1F2044;
+  text-decoration: none;
+  font-style: normal;
+  line-height: normal;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  margin-top: 3rem;
+}
+.blog-box-style .blog-content .readMore_btn:hover {
+  background: #ffb400;
+  color: #FFFFFF;
+}
+
+/*===== BLOG BOX END =====*/
+/*--- 2. Font Family ---*/
+/*--- Colors variable ---*/
+/*--- preloader ---*/
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background: #d8d8d8;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  vertical-align: center;
+}
+.preloader .loader > div {
+  height: 100%;
+  width: 10px;
+  display: inline-block;
+  margin-left: 2px;
+  -webkit-animation: delay 0.8s infinite ease-in-out;
+          animation: delay 0.8s infinite ease-in-out;
+}
+.preloader .loader {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.preloader .loader .bar {
+  border-radius: 2px;
+  width: 5px;
+  height: 30px;
+  margin: -2px;
+  background-color: #1F2044;
+}
+.preloader .loader .bar2 {
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s;
+}
+.preloader .loader .bar3 {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+.preloader .loader .bar4 {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+.preloader .loader .bar5 {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+.preloader .loader .bar6 {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+.preloader .loader .bar7 {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+.preloader .loader .bar8 {
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
+}
+.preloader .loader .bar9 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+@-webkit-keyframes delay {
+  0%, 40%, 100% {
+    transform: scaleY(1);
+  }
+  20% {
+    transform: scaleY(1.5);
+  }
+}
+@keyframes delay {
+  0%, 40%, 100% {
+    transform: scaleY(1);
+  }
+  20% {
+    transform: scaleY(1.5);
+  }
+}
+/*--- Preloader CSS END ---*/
+/*--- 2. Font Family ---*/
+/*--- Colors variable ---*/
+.header-area {
+  padding: 1rem 0;
+  /*===== Main Menu CSS =====*/
+  /*--- Navbar area end ---*/
+}
+.header-area .site-wrapper {
+  width: 15%;
+}
+.header-area .site-wrapper a.navbar-brand {
+  font-size: 3.6rem;
+  font-family: "Saira Stencil One", cursive;
+  text-decoration: none;
+  font-weight: 400;
+  color: #1F2044;
+}
+.header-area .site-wrapper a.navbar-brand span {
+  color: red;
+}
+.header-area nav.main-nav ul.primary-menu {
+  display: flex;
+  align-items: center;
+}
+.header-area nav.main-nav ul.primary-menu li {
+  position: relative;
+  padding: 0 1.5rem;
+}
+.header-area nav.main-nav ul.primary-menu li:hover.has-child-menu:after {
+  transform: rotate(-180deg);
+  color: #ffb400;
+}
+.header-area nav.main-nav ul.primary-menu li a.active {
+  color: #ffb400;
+}
+.header-area nav.main-nav ul.primary-menu li.has-child-menu::after {
+  position: absolute;
+  right: 0;
+  color: #000;
+  top: 1.5rem;
+  font-family: "boxicons";
+  content: "\e9ac";
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+.header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li {
+  padding: 0;
+}
+.header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li a {
+  padding: 1rem 1.5rem;
+}
+.header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li a:hover {
+  background: transparent;
+  transform: translateX(10px);
+}
+.header-area .main-nav ul li .sub-menu {
+  position: absolute;
+  left: 0;
+  top: auto;
+  right: 0;
+  min-width: 200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #f3f2f7;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+  transform: translateY(20px);
+  transition: all 0.3s;
+  border-top: 3px solid #1F2044;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.header-area .main-nav ul li .sub-menu li .sub-menu {
+  right: -200px;
+  left: inherit;
+  top: 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.header-area .main-nav ul li .sub-menu > li {
+  display: block;
+  margin: 0;
+  position: relative;
+}
+.header-area .main-nav ul > li a:hover {
+  background: transparent;
+  color: #1F2044;
+}
+.header-area .main-nav .fl {
+  width: 30px;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  font-style: normal;
+  position: absolute;
+  right: -5px;
+  top: 0;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+}
+.header-area .main-nav .fl:before {
+  font-size: 14px;
+  text-align: center;
+  line-height: 35px;
+}
+.header-area .main-nav > ul > li + li > .sub-menu {
+  left: 15px;
+}
+.header-area .main-nav > ul > li:hover > .sub-menu,
+.header-area .main-nav ul li .sub-menu li:hover > .sub-menu,
+.header-area .main-nav ul li .sub-menu li .sub-menu li:hover > .sub-menu {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+.header-area .slideInUp {
+  visibility: hidden;
+  opacity: 0;
+  transform: translate3d(0, 30px, 0);
+  transition: all 1s ease-out;
+}
+.header-area .is-active .slideInUp {
+  visibility: visible;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.header-area .slideInUp2 {
+  transition-delay: 0.3s;
+}
+.header-area .header-btn {
+  margin-left: 2rem;
+}
+.header-area.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #FFFFFF;
+  z-index: 9999;
+  -webkit-animation: 0.5s ease-in-out;
+          animation: 0.5s ease-in-out;
+  width: 100%;
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+/*--- 2. Font Family ---*/
+/*--- Colors variable ---*/
+/*--- 2. Font Family ---*/
+/*--- Colors variable ---*/
+/*--- 4. All Extend Classes in here ---*/
+.section-top-spacing {
+  padding-top: 14rem;
+  padding-bottom: 7rem;
+}
+
+.section-spacing {
+  padding: 7rem 0;
+}
+
+.header-area nav.main-nav ul.primary-menu li a {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+  padding: 1.5rem 0;
+  position: relative;
+  cursor: pointer;
+}
+.header-area nav.main-nav ul.primary-menu li a:hover {
+  color: #ffb400;
+}
+
+.header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li a {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+  padding: 0.75rem 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+.header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li a:hover {
+  color: #ffb400;
+}
+
+.header-area .header-btn .primary-btn {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  background: #1F2044;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  line-height: 1.8rem;
+  letter-spacing: normal;
+  padding: 1rem 2rem;
+}
+.header-area .header-btn .primary-btn:hover {
+  color: #FFFFFF;
+  background: #ffb400;
+}
+
+.header-top ul li a i::before {
+  font-size: 1.8rem;
+  color: #1F2044;
+  background: #FFFFFF;
+  padding: 0.5rem;
+  border-radius: 5rem;
+  vertical-align: middle;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.header-top ul li a i:hover::before {
+  background-color: #fff;
+  color: #1F2044;
+}
+
+.header-top ul.topbar-support li a i:before {
+  font-size: 2rem;
+  color: #FFF;
+  background: transparent;
+  padding: 1rem;
+  margin: 0;
+}
+.header-top ul.topbar-support li a i:hover:before {
+  color: #FFF;
+  background: transparent;
+}
+
+/*===== Section Main Title CSS =====*/
+/*===== Section Main Title CSS =====*/
+.service-item-style .box_innerContent h3 a {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin: 0;
+  letter-spacing: normal;
+  font-style: normal;
+}
+.service-item-style .box_innerContent h3 a span {
+  color: red;
+  opacity: 0.8;
+}
+
+.service-item-style .box_innerContent p, .blog-box-style .blog-content p {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/*===== Animated btn CSS =====*/
+.animated-btn {
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.animated-btn .pikachu {
+  max-width: 10rem;
+  height: 10rem;
+  position: absolute;
+  bottom: 0;
+  background: transparent !important;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.animated-btn .pikachu img {
+  background: transparent !important;
+}
+.animated-btn .active {
+  transform: translateY(-0.8rem);
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.animated-btn .btn-submit {
+  position: absolute;
+  background: chocolate;
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 0.1px;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background 0.5s;
+  overflow: hidden;
+}
+
+/*===== Animated btn CSS =====*/
+/*===== Service Item CSS =====*/
+.service-item-style {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.service-item-style:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.service-item-style:hover .box_innerContent a.btn_learnMore {
+  letter-spacing: 0.75px;
+  color: #ffb400;
+}
+.service-item-style:hover .box_innerContent a.btn_learnMore i:before {
+  color: #ffb400;
+}
+.service-item-style .box_innerIcon {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.service-item-style .box_innerIcon i {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 7rem;
+  align-items: center;
+  color: #e5e5e5;
+  justify-content: center;
+  margin: 0;
+  border-radius: 1rem;
+  background: #1F2044;
+}
+.service-item-style .box_innerContent h3 a {
+  margin-bottom: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.service-item-style .box_innerContent h3 a:hover {
+  color: #ffb400;
+}
+.service-item-style .box_innerContent p {
+  margin: 1rem 0 2rem 0;
+}
+.service-item-style .box_innerContent a.btn_learnMore {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0;
+  transition: 0s;
+  transition: all 0.3s ease-in-out;
+}
+.service-item-style .box_innerContent a.btn_learnMore i:before {
+  font-family: Flaticon;
+  font-size: 1rem;
+  font-weight: 900 !important;
+  font-style: normal;
+  background: transparent;
+  opacity: 0.8;
+  padding: 0 0.3rem;
+  vertical-align: middle;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Caption element-item */
+.element-item {
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+.element-item img {
+  width: 100%;
+}
+.element-item .caption {
+  box-sizing: border-box;
+  position: absolute;
+  width: 80%;
+  height: 23rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  margin: 0px auto;
+  background: rgba(16, 20, 87, 0.8);
+  color: #FFFFFF;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  transition: all 0.8s ease-out;
+  transform: translateY(100%);
+}
+.element-item .caption h5 {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin: 15px 0 0 0;
+}
+.element-item .caption p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: normal;
+  padding: 0;
+  margin-top: 1rem;
+}
+.element-item .caption a.btn-primary {
+  border-radius: 0.5rem;
+  padding: 0.8rem 2rem;
+  text-align: center;
+  margin: 1.5rem 0 0 0;
+  background: #FFFFFF;
+  color: #1F2044;
+  font-size: 1.4rem;
+  font-weight: 600s;
+  transition: all 0.3s ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+.element-item .caption a.btn-primary:hover {
+  background: #101357;
+  color: #FFFFFF;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 2px 8px 0px;
+}
+.element-item:hover .caption {
+  transform: translateY(0);
+}
+
+/*===== Service Item CSS =====*/
+/*===== BLOG BOX CSS =====*/
+.blog-box-style {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+.blog-box-style:hover .blog-img img {
+  transform: scale(1.1) rotate(3deg);
+}
+.blog-box-style .blog-img {
+  overflow: hidden;
+  width: 100%;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.blog-box-style .blog-img img {
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  height: auto;
+}
+.blog-box-style .blog-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+.blog-box-style .blog-content:hover h4 {
+  color: #ffb400;
+}
+.blog-box-style .blog-content a h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  line-height: 3rem;
+  transition: all 0.5s ease-in-out;
+}
+.blog-box-style .blog-content p {
+  margin: 0;
+  padding-top: 1.5rem;
+}
+.blog-box-style .blog-content .readMore_btn {
+  color: #FFF;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  background: #1F2044;
+  text-decoration: none;
+  font-style: normal;
+  line-height: normal;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  margin-top: 3rem;
+}
+.blog-box-style .blog-content .readMore_btn:hover {
+  background: #ffb400;
+  color: #FFFFFF;
+}
+
+/*===== BLOG BOX END =====*/
+/*--- Top Header area ---*/
+.header-top {
+  background: #1F2044;
+  padding: 1.5rem 0;
+}
+.header-top ul.topbar-support {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.header-top ul.topbar-support li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.header-top ul {
+  display: flex;
+  align-items: center;
+}
+.header-top ul li a {
+  font-family: Poppins;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 0.8rem;
+  color: #e5e5e5;
+}
+.header-top ul li:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+/*--- 2. Font Family ---*/
+/*--- Colors variable ---*/
+/*--- 4. All Extend Classes in here ---*/
+.section-top-spacing {
+  padding-top: 14rem;
+  padding-bottom: 7rem;
+}
+
+.section-spacing {
+  padding: 7rem 0;
+}
+
+.header-area nav.main-nav ul.primary-menu li a {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+  padding: 1.5rem 0;
+  position: relative;
+  cursor: pointer;
+}
+.header-area nav.main-nav ul.primary-menu li a:hover {
+  color: #ffb400;
+}
+
+.header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li a {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+  padding: 0.75rem 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+.header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li a:hover {
+  color: #ffb400;
+}
+
+.header-area .header-btn .primary-btn {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  background: #1F2044;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  line-height: 1.8rem;
+  letter-spacing: normal;
+  padding: 1rem 2rem;
+}
+.header-area .header-btn .primary-btn:hover {
+  color: #FFFFFF;
+  background: #ffb400;
+}
+
+.header-top ul li a i::before {
+  font-size: 1.8rem;
+  color: #1F2044;
+  background: #FFFFFF;
+  padding: 0.5rem;
+  border-radius: 5rem;
+  vertical-align: middle;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.header-top ul li a i:hover::before {
+  background-color: #fff;
+  color: #1F2044;
+}
+
+.header-top ul.topbar-support li a i:before {
+  font-size: 2rem;
+  color: #FFF;
+  background: transparent;
+  padding: 1rem;
+  margin: 0;
+}
+.header-top ul.topbar-support li a i:hover:before {
+  color: #FFF;
+  background: transparent;
+}
+
+/*===== Section Main Title CSS =====*/
+/*===== Section Main Title CSS =====*/
+.service-item-style .box_innerContent h3 a {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin: 0;
+  letter-spacing: normal;
+  font-style: normal;
+}
+.service-item-style .box_innerContent h3 a span {
+  color: red;
+  opacity: 0.8;
+}
+
+.service-item-style .box_innerContent p, .blog-box-style .blog-content p {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/*===== Animated btn CSS =====*/
+.animated-btn {
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.animated-btn .pikachu {
+  max-width: 10rem;
+  height: 10rem;
+  position: absolute;
+  bottom: 0;
+  background: transparent !important;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.animated-btn .pikachu img {
+  background: transparent !important;
+}
+.animated-btn .active {
+  transform: translateY(-0.8rem);
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.animated-btn .btn-submit {
+  position: absolute;
+  background: chocolate;
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 0.1px;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background 0.5s;
+  overflow: hidden;
+}
+
+/*===== Animated btn CSS =====*/
+/*===== Service Item CSS =====*/
+.service-item-style {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.service-item-style:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.service-item-style:hover .box_innerContent a.btn_learnMore {
+  letter-spacing: 0.75px;
+  color: #ffb400;
+}
+.service-item-style:hover .box_innerContent a.btn_learnMore i:before {
+  color: #ffb400;
+}
+.service-item-style .box_innerIcon {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.service-item-style .box_innerIcon i {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 7rem;
+  align-items: center;
+  color: #e5e5e5;
+  justify-content: center;
+  margin: 0;
+  border-radius: 1rem;
+  background: #1F2044;
+}
+.service-item-style .box_innerContent h3 a {
+  margin-bottom: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.service-item-style .box_innerContent h3 a:hover {
+  color: #ffb400;
+}
+.service-item-style .box_innerContent p {
+  margin: 1rem 0 2rem 0;
+}
+.service-item-style .box_innerContent a.btn_learnMore {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0;
+  transition: 0s;
+  transition: all 0.3s ease-in-out;
+}
+.service-item-style .box_innerContent a.btn_learnMore i:before {
+  font-family: Flaticon;
+  font-size: 1rem;
+  font-weight: 900 !important;
+  font-style: normal;
+  background: transparent;
+  opacity: 0.8;
+  padding: 0 0.3rem;
+  vertical-align: middle;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Caption element-item */
+.element-item {
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+.element-item img {
+  width: 100%;
+}
+.element-item .caption {
+  box-sizing: border-box;
+  position: absolute;
+  width: 80%;
+  height: 23rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  margin: 0px auto;
+  background: rgba(16, 20, 87, 0.8);
+  color: #FFFFFF;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  transition: all 0.8s ease-out;
+  transform: translateY(100%);
+}
+.element-item .caption h5 {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin: 15px 0 0 0;
+}
+.element-item .caption p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: normal;
+  padding: 0;
+  margin-top: 1rem;
+}
+.element-item .caption a.btn-primary {
+  border-radius: 0.5rem;
+  padding: 0.8rem 2rem;
+  text-align: center;
+  margin: 1.5rem 0 0 0;
+  background: #FFFFFF;
+  color: #1F2044;
+  font-size: 1.4rem;
+  font-weight: 600s;
+  transition: all 0.3s ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+.element-item .caption a.btn-primary:hover {
+  background: #101357;
+  color: #FFFFFF;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 2px 8px 0px;
+}
+.element-item:hover .caption {
+  transform: translateY(0);
+}
+
+/*===== Service Item CSS =====*/
+/*===== BLOG BOX CSS =====*/
+.blog-box-style {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+.blog-box-style:hover .blog-img img {
+  transform: scale(1.1) rotate(3deg);
+}
+.blog-box-style .blog-img {
+  overflow: hidden;
+  width: 100%;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.blog-box-style .blog-img img {
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  height: auto;
+}
+.blog-box-style .blog-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+.blog-box-style .blog-content:hover h4 {
+  color: #ffb400;
+}
+.blog-box-style .blog-content a h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  line-height: 3rem;
+  transition: all 0.5s ease-in-out;
+}
+.blog-box-style .blog-content p {
+  margin: 0;
+  padding-top: 1.5rem;
+}
+.blog-box-style .blog-content .readMore_btn {
+  color: #FFF;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  background: #1F2044;
+  text-decoration: none;
+  font-style: normal;
+  line-height: normal;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  margin-top: 3rem;
+}
+.blog-box-style .blog-content .readMore_btn:hover {
+  background: #ffb400;
+  color: #FFFFFF;
+}
+
+/*===== BLOG BOX END =====*/
+/*=== Footer Area start ===*/
+.footer-area {
+  background: #e5e5e5;
+  padding-top: 5rem;
+}
+.footer-area .social-area ul.social-links {
+  padding: 3rem 0;
+}
+.footer-area .social-area ul.social-links li {
+  position: relative;
+}
+.footer-area .social-area ul.social-links li:hover .cs-tooltip {
+  display: block;
+}
+.footer-area .social-area ul.social-links li:hover a i:before {
+  background: #ffb400;
+  color: #1F2044;
+}
+.footer-area .social-area ul.social-links li .cs-tooltip {
+  font-size: 1.2rem;
+  font-weight: 500;
+  background: #1F2044;
+  color: #FFFFFF;
+  letter-spacing: 0.75px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: -5rem;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+  display: none;
+  z-index: 1;
+}
+.footer-area .social-area ul.social-links li .cs-tooltip::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background: #1F2044;
+  position: absolute;
+  bottom: -3px;
+  transform: rotate(45deg);
+}
+.footer-area .social-area ul.social-links li a i:before {
+  font-size: 3rem;
+  background: #1F2044;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: #e5e5e5;
+  border: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+.footer-area .social-area ul.social-links li:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+/*=== Footer Area end ===*/
+/*==== Copy Right =====*/
+.copy-right {
+  padding-bottom: 0.5rem;
+}
+.copy-right p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.1rem;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+}
+.copy-right p a {
+  transition: all 0.3s ease-in-out;
+}
+.copy-right p a:hover {
+  color: #ffb400;
+}
+
+/*=== End FOOTER AREA ===*/
+@media (max-width: 1199.98px) {
+  .slider-area .slider-content .animated-title h1 {
+    font-size: 4.6rem;
+    line-height: 6.5rem;
+  }
+  .element-item .caption {
+    width: 92%;
+    height: 27rem;
+  }
+}
+@media (max-width: 991.98px) {
+  /*=== Slider area css start ===*/
+  .slider-area {
+    padding: 7rem 0;
+  }
+  .slider-area .slider-content .animated-title h1,
+.slider-area .slider-content .animated-title .word {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
+  .slider-area .slider-content p {
+    padding-top: 3rem;
+  }
+  /*=== Slider area css end ===*/
+  /*=== About area css start ===*/
+  .about-area .content-area {
+    padding-left: 0;
+    margin-top: 3rem;
+  }
+  .about-area .img-box {
+    margin-top: 5rem;
+  }
+  /*=== About area css end ===*/
+  /*=== Experience area css start ===*/
+  .experience-area .tab-item .education-part .edu-list ul {
+    flex-direction: column;
+  }
+  .experience-area .tab-item .experience-part .edu-list ul li:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+  .experience-area .tab-item .experience-part .edu-list ul {
+    margin-bottom: 1.5rem;
+  }
+  .experience-area .tab-item .education-part .edu-list ul li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  .experience-area .tab-item .skills-part .skills-bar {
+    margin-bottom: 1.5rem;
+  }
+  /*=== Experience area css end ===*/
+  /*=== Portfolio area css start ===*/
+  .portfolio-area .portfolio_wrapper .element-item .caption {
+    height: 26rem;
+  }
+  .portfolio-area .portfolio_wrapper .element-item .caption p {
+    font-size: 1.4rem;
+  }
+  /*=== Portfolio area css end ===*/
+}
+@media (max-width: 575.98px) {
+  /*=== About area css start ===*/
+  .about-area .content-area {
+    text-align: center;
+  }
+  .about-area .content-area .personal-info .info-list {
+    text-align: left;
+    flex-direction: column;
+  }
+  /*=== About area css end ===*/
+  /*=== Experience area css start ===*/
+  .experience-area ul.nav__menu li.nav-item:not(:last-child) {
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  /*=== experience area css end ===*/
+  /*=== contact area css start ===*/
+  .contact-area .contact-lines {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-area .contact-mailform {
+    text-align: center;
+    margin-top: 5rem;
+  }
+  /*=== contact area css end ===*/
+  /*=== footer area css start ===*/
+  .footer-area .social-area ul.social-links {
+    flex-wrap: wrap;
+  }
+  .footer-area .social-area ul.social-links li {
+    margin-right: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  /*=== footer area css end ===*/
+}
+@media (max-width: 767.98px) {
+  /*==== Responsive Header area start ====*/
+  .header-area .site-wrapper {
+    width: 25%;
+    z-index: 999999;
+  }
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    margin: 0.8rem 0;
+    cursor: pointer;
+    border: 3px solid transparent;
+    float: right;
+    z-index: 999999999;
+  }
+  .header-area nav.main-nav ul.primary-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: start;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+  .header-area nav.main-nav ul.primary-menu li a {
+    color: #1F2044;
+    padding: 1rem 0;
+    margin: 0;
+  }
+  .header-area nav.main-nav ul.primary-menu li a.active {
+    color: #ffb400;
+  }
+  .header-area nav.main-nav .sidebar-support .header-btn {
+    margin: 0;
+    padding: 3rem 0;
+  }
+  .header-area nav.main-nav .sidebar-support ul.navbar-support li a {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .header-area nav.main-nav .sidebar-support ul.navbar-social-icon {
+    padding: 3rem 0;
+  }
+  .header-area nav.main-nav .sidebar-support ul.navbar-social-icon li {
+    position: relative;
+  }
+  .header-area nav.main-nav .sidebar-support ul.navbar-social-icon li:hover .cs-tooltip {
+    display: block;
+  }
+  .header-area nav.main-nav .sidebar-support ul.navbar-social-icon li:hover a i:before {
+    background: #ffb400;
+    color: #1F2044;
+  }
+  .header-area nav.main-nav .sidebar-support ul.navbar-social-icon li .cs-tooltip {
+    font-size: 1.2rem;
+    font-weight: 500;
+    background: #1F2044;
+    color: #FFFFFF;
+    letter-spacing: 0.75px;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: -5rem;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+    display: none;
+    z-index: 1;
+  }
+  .header-area nav.main-nav .sidebar-support ul.navbar-social-icon li .cs-tooltip::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background: #1F2044;
+    position: absolute;
+    bottom: -3px;
+    transform: rotate(45deg);
+  }
+  .header-area nav.main-nav .sidebar-support ul.navbar-social-icon li a i:before {
+    font-size: 2rem;
+    background: #1F2044;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: #e5e5e5;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+  }
+  .header-area nav.main-nav .sidebar-support ul.navbar-social-icon li:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+  .main-nav ul > li a:hover {
+    background: transparent;
+    color: #1F2044;
+  }
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25rem;
+    padding: 2rem 1.5rem;
+    z-index: 99999;
+    height: 100%;
+    overflow: auto;
+    background: #e5e5e5;
+    transform: translateX(-250px);
+    transition: transform 0.3s ease-in;
+  }
+  .main-nav > ul > li.has-child-menu:after {
+    display: none !important;
+  }
+  .hamburger span {
+    width: 100%;
+    height: 3px;
+    background: #1F2044;
+    display: block;
+    position: absolute;
+    right: 0;
+    transition: all 0.3s;
+  }
+  .hamburger span.h-top {
+    top: 0;
+  }
+  .hamburger span.h-bottom {
+    bottom: 0.2rem;
+    width: 27px;
+  }
+  .hamburger span.h-middle {
+    top: 50%;
+    margin-top: -0.3rem;
+    width: 25px;
+  }
+  .hamburger.h-active span {
+    width: 80%;
+  }
+  .hamburger.h-active span.h-top {
+    transform: rotate(45deg);
+    top: 50%;
+    margin-top: -1px;
+  }
+  .hamburger.h-active span.h-middle {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  .hamburger.h-active span.h-bottom {
+    transform: rotate(-45deg);
+    bottom: 50%;
+    margin-bottom: -1px;
+  }
+  .main-nav.slidenav {
+    transform: translateX(0);
+  }
+  .main-nav > ul > li {
+    display: block;
+    padding: 0;
+    margin-left: 0;
+  }
+  .main-nav ul li .fl {
+    display: block;
+    line-height: 35px;
+  }
+  .main-nav ul li ul.sub-menu {
+    position: static;
+    min-width: 200px;
+    background: transparent;
+    border: none;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+    padding: 2rem 1.5rem;
+  }
+  .header-area .main-nav ul.primary-menu li ul.sub-menu > li > a {
+    display: block;
+    padding: 1rem 0;
+    color: #FFFFFF;
+    border: none;
+    line-height: 0.8;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .header-area .main-nav ul li .sub-menu > li a.active {
+    color: #1F2044;
+    font-weight: normal;
+    font-size: 1.6rem;
+  }
+  /*==== Responsive Header area end ====*/
+  /*=== slider area css start ===*/
+  .slider-area .slider-content {
+    text-align: center;
+  }
+  .slider-area .slider-content .animated-title h1 {
+    font-size: 4.6rem;
+    line-height: 6.5rem;
+  }
+  .slider-area .slider-content p {
+    padding-top: 3rem;
+  }
+  .slider-area .slider-img-box {
+    padding-top: 5rem;
+  }
+  /*=== slider area css end ===*/
+  /*=== About area css start ===*/
+  .about-area .content-area {
+    margin-top: 3rem;
+    text-align: left;
+    padding: 0;
+  }
+  .about-area .content-area .inner-tile p {
+    line-height: 3rem;
+  }
+  .about-area .content-area .personal-info .info-list {
+    text-align: left;
+  }
+  /*=== About area css end ===*/
+  /*=== Portfolio area css end ===*/
+  .portfolio-area .portfolio_wrapper .filters-button-group {
+    padding-bottom: 5rem;
+  }
+  .portfolio-area .portfolio_wrapper .button-group .button {
+    margin: 0 1rem 1.5rem 0;
+  }
+  /*=== Portfolio area css end ===*/
+  /*=== contact area css start ===*/
+  .contact-area .contact-lines {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contact-area .contact-lines .single-contact-box {
+    text-align: center;
+  }
+  .contact-area .contact-lines .single-contact-box h6.pc {
+    justify-content: center;
+  }
+  .contact-area .contact-lines .single-contact-box p {
+    font-size: 1.4rem;
+  }
+  .contact-area .contact-mailform {
+    text-align: center;
+  }
+  .contact-area .contact-mailform .form-button {
+    text-align: left;
+  }
+  /*=== contact area css end ===*/
+  .header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li a {
+    color: #1F2044 !important;
+  }
+}/*# sourceMappingURL=responsive.css.map */

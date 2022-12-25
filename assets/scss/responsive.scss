@@ -1,0 +1,443 @@
+
+/*--- 1. Google Font ---*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import "partials/preloader";
+@import "partials/header-one";
+@import "partials/variables";
+@import "partials/extends";
+@import "partials/navbar-top";
+@import "partials/footer";
+
+@media (max-width: 1199.98px) {
+  .slider-area .slider-content .animated-title h1 {
+    font-size: 4.6rem;
+    line-height: 6.5rem;
+  }
+  .element-item .caption {
+    width: 92%;
+    height: 27rem;
+  }
+}
+
+
+
+@media (max-width: 991.98px) {
+
+  /*=== Slider area css start ===*/
+  .slider-area {
+    padding: 7rem 0;
+  }
+  .slider-area .slider-content .animated-title h1,
+   .slider-area .slider-content .animated-title .word {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
+  .slider-area .slider-content p {
+    padding-top: 3rem;
+  }
+  /*=== Slider area css end ===*/
+
+  /*=== About area css start ===*/
+  .about-area .content-area {
+    padding-left: 0;
+    margin-top: 3rem;
+  }
+
+  .about-area .img-box {
+    margin-top: 5rem;
+  }
+  /*=== About area css end ===*/
+
+  /*=== Experience area css start ===*/
+ .experience-area .tab-item .education-part .edu-list ul {
+  flex-direction: column;
+  }
+  .experience-area .tab-item .experience-part .edu-list ul li:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+ .experience-area .tab-item .experience-part .edu-list ul {
+    margin-bottom: 1.5rem;
+  }
+ .experience-area .tab-item .education-part .edu-list ul li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  .experience-area .tab-item .skills-part .skills-bar {
+    margin-bottom: 1.5rem;
+  }
+  /*=== Experience area css end ===*/
+
+  /*=== Portfolio area css start ===*/
+  .portfolio-area .portfolio_wrapper .element-item .caption {
+    height: 26rem;
+  }
+  .portfolio-area .portfolio_wrapper .element-item .caption p {
+    font-size: 1.4rem;
+  }
+  /*=== Portfolio area css end ===*/
+}
+
+@media (max-width: 575.98px) {
+
+  /*=== About area css start ===*/
+  .about-area .content-area {
+    text-align: center;
+  }
+  .about-area .content-area .personal-info .info-list {
+    text-align: left;
+    flex-direction: column;
+  }
+  /*=== About area css end ===*/
+
+  /*=== Experience area css start ===*/
+  .experience-area ul.nav__menu li.nav-item:not(:last-child) {
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  /*=== experience area css end ===*/
+
+  /*=== contact area css start ===*/
+  .contact-area .contact-lines {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-area .contact-mailform  {
+    text-align: center;
+    margin-top: 5rem;
+  }
+  /*=== contact area css end ===*/
+
+  /*=== footer area css start ===*/
+  .footer-area .social-area ul.social-links {
+    flex-wrap: wrap;
+  }
+  .footer-area .social-area ul.social-links li {
+    margin-right: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  /*=== footer area css end ===*/
+
+
+}
+
+@media (max-width: 767.98px) {
+  /*==== Responsive Header area start ====*/
+  .header-area .site-wrapper {
+      width: 25%;
+      z-index: 999999;
+  }
+
+  %top-icon {
+    font-size: 1.4rem;
+    color: $secondary-clr;
+    background: transparent;
+    padding: 0.5rem;
+    border-radius: 5rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      background: $secondary-clr;
+      color: $primary-clr;
+    }
+  }
+  // Responsive Navbar
+    
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    margin: 0.8rem 0;
+    cursor: pointer;
+    border: 3px solid transparent;
+    float: right;
+    z-index: 999999999;
+  //   &:focus {
+  //     border: 3px solid transparent;
+  //   }
+  }
+
+  .header-area {
+      nav.main-nav {
+        ul.primary-menu {
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          align-items: start;
+          padding-top: 5rem;
+          padding-bottom: 2rem;
+          li {
+            a {
+                color: $primary-clr;
+                padding: 1rem 0; 
+                margin: 0;
+            }
+            a.active {
+              color: $active-clr;
+            }
+          }
+        }
+
+        .sidebar-support {
+          .header-btn {
+            margin: 0;
+            padding: 3rem 0;
+          }
+          ul.navbar-support {
+            li a {
+              font-size: 1.6rem;
+              font-weight: 700;
+            }
+          }
+          ul.navbar-social-icon {
+            padding: 3rem 0;
+            li {
+              position: relative;
+              &:hover {
+                .cs-tooltip {
+                  display: block;
+                }
+                a i:before {
+                  background: $active-clr;
+                  color: $primary-clr;
+                }
+              }
+              .cs-tooltip {
+                font-size: 1.2rem;
+                font-weight: 500;
+                background: $primary-clr;
+                color: #FFFFFF;
+                letter-spacing: 0.75px;
+                text-align: center;
+                padding: 0.5rem 1rem;
+                border-radius: 0.3rem;
+                position: absolute;
+                top: -5rem;
+                left: 0;
+                transition: all 0.5s ease-in-out;
+                display: none;
+                z-index: 1;
+                &::before {
+                  content: '';
+                  width: 1rem;
+                  height: 1rem;
+                  background: $primary-clr;
+                  position: absolute;
+                  bottom: -3px;
+                  transform: rotate(45deg);
+                }
+              }
+              a {
+                i:before {
+                  font-size: 2rem;
+                  background: $primary-clr;
+                  padding: 0.5rem;
+                  border-radius: 0.5rem;
+                  color: $secondary-clr;
+                  border: 1px solid transparent;
+                  transition: all 0.5s ease-in-out;
+                }
+              }
+            }
+            li:not(:last-child) {
+                margin-right: 0.5rem;
+            }
+          }
+        }
+      }
+  }
+  
+  .main-nav ul > li a:hover {
+    background: transparent;
+    color: $primary-clr;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25rem;
+    padding: 2rem 1.5rem;
+    z-index: 99999;
+    height: 100%;
+    overflow: auto;
+    background: $secondary-clr;
+    transform: translateX(-250px);
+    transition: transform 0.3s ease-in;
+  }
+
+  .main-nav > ul > li.has-child-menu:after {
+    display: none !important;
+  }
+
+  .hamburger span {
+    width: 100%;
+    height: 3px;
+    background: $primary-clr;
+    display: block;
+    position: absolute;
+    right: 0;
+    transition: all 0.3s;
+  }
+  .hamburger span.h-top {
+    top: 0;
+  }
+  .hamburger span.h-bottom {
+    bottom: 0.2rem;
+    width: 27px;
+  }
+  .hamburger span.h-middle {
+    top: 50%;
+    margin-top: -0.3rem;
+    width: 25px;
+  }
+  .hamburger.h-active span {
+    width: 80%;
+  }
+  .hamburger.h-active span.h-top {
+    transform: rotate(45deg);
+    top: 50%;
+    margin-top: -1px;
+  }
+  .hamburger.h-active span.h-middle {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  .hamburger.h-active span.h-bottom {
+    transform: rotate(-45deg);
+    bottom: 50%;
+    margin-bottom: -1px;
+  }
+  .main-nav.slidenav {
+    transform: translateX(0)
+  }
+
+  .main-nav > ul > li {
+    display: block;
+    padding: 0;
+    margin-left: 0
+  }
+  
+  .main-nav ul li .fl {
+    display: block;
+    line-height: 35px
+  //   background: aqua;
+  }
+  .main-nav ul li ul.sub-menu {
+    position: static;
+    min-width: 200px;
+    background: transparent;
+    border: none;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+    padding: 2rem 1.5rem;
+    // display: none
+  }
+
+  .header-area .main-nav ul.primary-menu li ul.sub-menu > li > a {
+    display: block;
+    padding: 1rem 0;
+    color: $tertiary-clr;
+    border: none;
+    line-height: 0.8;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .header-area .main-nav ul li .sub-menu > li a.active {
+    color: $primary-clr;
+    font-weight: normal;
+    font-size: 1.6rem;
+  }
+  
+  /*==== Responsive Header area end ====*/
+    
+ /*=== slider area css start ===*/
+  .slider-area {
+    .slider-content {
+      text-align: center;
+      .animated-title {
+        h1 {
+          font-size: 4.6rem;
+          line-height: 6.5rem;
+        }
+      }
+      p {
+        padding-top: 3rem;
+      }
+    }
+    .slider-img-box {
+      padding-top: 5rem;
+    }
+
+  }
+ /*=== slider area css end ===*/
+
+ /*=== About area css start ===*/
+  .about-area {
+    .content-area {
+      margin-top: 3rem;
+      text-align: left;
+      padding: 0;
+      .inner-tile {
+        p {
+          line-height: 3rem;
+        }
+      }
+      .personal-info {
+        .info-list {
+          text-align: left;
+        }
+      }
+    }
+  }
+ /*=== About area css end ===*/
+
+ /*=== Portfolio area css end ===*/
+ .portfolio-area .portfolio_wrapper .filters-button-group {
+    padding-bottom: 5rem;
+  }
+ .portfolio-area .portfolio_wrapper .button-group .button {
+    margin: 0 1rem 1.5rem 0;
+  }
+
+ /*=== Portfolio area css end ===*/
+
+  /*=== contact area css start ===*/
+  .contact-area .contact-lines {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contact-area .contact-lines .single-contact-box {
+    text-align: center;
+  }
+  .contact-area .contact-lines .single-contact-box h6.pc {
+    justify-content: center;
+  }
+  .contact-area .contact-lines .single-contact-box p {
+    font-size: 1.4rem;
+  }
+  .contact-area .contact-mailform  {
+    text-align: center;
+    // margin-top: 5rem;
+  }
+  .contact-area .contact-mailform .form-button  {
+    text-align: left;
+  }
+  /*=== contact area css end ===*/
+  .header-area nav.main-nav ul.primary-menu li>ul.sub-menu> li a {
+    color: $primary-clr !important;
+  }
+  
+}

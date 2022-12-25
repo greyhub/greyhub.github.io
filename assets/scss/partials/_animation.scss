@@ -1,0 +1,115 @@
+.amimation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: -1;
+    background: #FFF;
+    .glowing {
+        position: relative;
+        min-width: 50rem;
+        height: 30rem;
+        span {
+            position: absolute;
+            top: calc(0rem * var(--i));
+            left: calc(0rem * var(--i));
+            right: calc(0rem * var(--i));
+            bottom: calc(0rem * var(--i));
+        
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 1rem;
+                width: 1rem;
+                height: 1rem;
+                background: green;
+                border-radius: 100%;
+            }
+        }
+        span:nth-child(3n + 1):before {
+            background: rgba(134, 255, 0, 1);
+            box-shadow: 0 0 2rem rgba(134, 255, 0, 1),
+                        0 0 4rem rgba(134, 255, 0, 1),
+                        0 0 6rem rgba(134, 255, 0, 1),
+                        0 0 8rem rgba(134, 255, 0, 1),
+                        0 0 0 0.8rem rgba(134, 255, 0, 0.1);
+        }
+        span:nth-child(3n + 2):before {
+            background: rgba(255, 255, 0, 1);
+            box-shadow: 0 0 2rem rgba(255, 255, 0, 1),
+                        0 0 4rem rgba(255, 255, 0, 1),
+                        0 0 6rem rgba(255, 255, 0, 1),
+                        0 0 8rem rgba(255, 255, 0, 1),
+                        0 0 0 0.8rem rgba(255, 255, 0, 0.1);
+        }
+        span:nth-child(3n + 3):before {
+            background: rgba(38, 87, 54, 1);
+            box-shadow: 0 0 2rem rgba(38, 87, 54, 1),
+                        0 0 4rem rgba(38, 87, 54, 1),
+                        0 0 6rem rgba(38, 87, 54, 1),
+                        0 0 8rem rgba(38, 87, 54, 1),
+                        0 0 0 0.8rem rgba(38, 87, 54, 0.1);
+        }
+      
+  
+        span:nth-child(3n + 1) {
+            animation: spin 30s infinite linear;
+            width: 25rem;
+        }
+        span:nth-child(3n + 2) {
+            animation: animate-reverse 25s infinite linear;
+            width: 20rem;
+        }
+        span:nth-child(3n + 3) {
+            animation: animate 15s infinite linear;
+            width: 8rem;
+        }
+    
+
+        @keyframes animate-reverse {
+            0% {
+                transform: rotate(-0deg);
+            }
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+        @keyframes animate {
+            0% {
+                transform: rotate(-360deg);
+            }
+            100% {
+                transform: rotate(-0deg);
+            }
+        }
+    }
+
+    // .part-1 {
+    //     position: absolute;
+    //     top: -5rem;
+    // }
+    // .part-2 {
+    //     position: absolute;
+    //     bottom: -5rem;
+    // }
+    // .part-3 {
+    //     position: absolute;
+    //     top: -5rem;
+    // }
+    // .part-4 {
+    //     position: absolute;
+    //     bottom: -5rem;
+    // }
+    // .part-5 {
+    //     position: absolute;
+    //     top: -5rem;
+    // }
+}

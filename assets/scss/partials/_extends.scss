@@ -1,0 +1,466 @@
+@import "./variables";
+
+/*--- 4. All Extend Classes in here ---*/
+.section-top-spacing {
+    padding-top: 14rem;
+    padding-bottom: 7rem;
+}
+.section-spacing {
+    padding: 7rem 0;
+}
+
+%widget-area-last-cild {
+    margin-bottom: 5rem;
+}
+
+%primary-menu-style {
+    display: block;
+    // color: $primary-clr;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: $primary-font;
+    transition: all 0.3s ease-in-out;
+    padding: 1.5rem 0;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      color: $active-clr;
+    }
+  }
+%sub-menu-style {
+    display: block;
+    // color: $primary-clr;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: $primary-font;
+    transition: all 0.3s ease-in-out;
+    padding: 0.75rem 1.5rem;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      color: $active-clr;
+    }
+  }
+
+%primary-btn-style {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    background: $primary-clr;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    line-height: 1.8rem;
+    letter-spacing: normal;
+    padding: 1rem 2rem;
+    &:hover {
+      color: $tertiary-clr;
+      background: $active-clr;
+    }
+    
+}
+
+%download-btn-style {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    background: $primary-clr;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    line-height: 2.8rem;
+    letter-spacing: 0.75px;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    &:hover {
+        background: $active-clr;
+        color: $secondary-clr;
+    }
+}
+
+
+%social-icon {
+    font-size: 1.8rem;
+    color: $primary-clr;
+    background: $tertiary-clr;
+    padding: 0.5rem;
+    border-radius: 5rem;
+    vertical-align: middle;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        background-color: #fff;
+        color: $primary-clr;
+    }
+}
+
+%support-icon {
+  font-size: 2rem;
+  color: #FFF;
+  background: transparent;
+  padding: 1rem;
+  margin: 0;
+  &:hover {
+      color: #FFF;
+      background: transparent;
+
+  }
+}
+
+
+%slider-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5.6rem;
+  line-height: 7.5rem;
+  margin: 0;
+}
+
+%slider-desc {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+  text-align: center;
+  max-width: 94.2rem;
+  margin: 0 auto;
+}
+
+/*===== Section Main Title CSS =====*/
+%section-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    line-height: 4.8rem;
+    letter-spacing: 0.3rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+    margin: 0;
+    &::before {
+        content: '';
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        left: 50%;
+        bottom: -0.9rem;
+        border-radius: 5rem;
+        border: 2px solid;
+        border-color: $primary-clr;
+    }
+    &::after {
+        content: '';
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        right: 50%;
+        bottom: -0.9rem;
+        border-radius: 5rem;
+        border: 2px solid;
+        border-color: $primary-clr;
+    }
+}
+/*===== Section Main Title CSS =====*/
+
+%sub-title-style {
+    padding-top: 2.5rem;
+    margin: 0;
+    opacity: 0.8;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    font-weight: 500;
+    line-height: 2.8rem;
+    position: relative;
+    display: inline-block;
+}
+
+%section-inner-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0;
+    padding-bottom: 1rem;
+    letter-spacing: normal;
+    line-height: 3rem;
+    font-style: normal;
+}
+
+%section-inner-sub-title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    margin: 0;
+    letter-spacing: normal;
+    font-style: normal;
+    span {
+        color: red;
+        opacity: 0.8;
+    }
+}
+
+%inner-desc {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/*===== Animated btn CSS =====*/
+.animated-btn {
+    // display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    .pikachu {
+        max-width: 10rem;
+        height: 10rem;
+        position: absolute;
+        bottom: 0;
+        background: transparent !important;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        img {
+          background: transparent !important;
+        }
+    }
+    .active {
+        transform: translateY(-0.8rem);
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+    }
+    .btn-submit {
+        position: absolute;
+        // width: 30vmin;
+        // margin-left: 5rem;
+        background: chocolate;
+        color: #fff;
+        font-size: 1.6rem;
+        letter-spacing: 0.1px;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        transition: background 0.5s;
+        overflow: hidden;
+    }
+}
+/*===== Animated btn CSS =====*/
+
+/*===== Service Item CSS =====*/
+.service-item-style {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      .box_innerContent {
+        a.btn_learnMore {
+          letter-spacing: 0.75px;
+          color: $active-clr;
+          i:before {
+            color: $active-clr;
+          }
+        }
+      }
+    }
+    .box_innerIcon {
+      width: 10rem;
+      height: 10rem;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      i {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        font-size: 7rem;
+        align-items: center;
+        color: $secondary-clr;
+        justify-content: center;
+        margin: 0;
+        border-radius: 1rem;
+        background: $primary-clr;
+      
+      }
+    }
+    
+    .box_innerContent {
+      h3 a {
+        @extend %section-inner-sub-title;
+        margin-bottom: 1rem;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: $active-clr;
+        }
+      }
+      p {
+        @extend %inner-desc;
+        margin: 1rem 0 2rem 0;
+      }
+      a.btn_learnMore {
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 0;
+        transition: 0s;
+        transition: all 0.3s ease-in-out;
+        i:before {
+          font-family: Flaticon;
+          font-size: 1rem;
+          font-weight: 900 !important;
+          font-style: normal;
+          background: transparent;
+          opacity: 0.8;
+          padding: 0 0.3rem;
+          vertical-align: middle;
+          margin: 0;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+}
+
+  /* Caption element-item */
+  .element-item  {
+    background:transparent;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    img {
+    width: 100%;
+    }
+    .caption {
+        box-sizing: border-box;
+        position: absolute;
+        width: 80%;
+        height: 23rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 2rem;
+        margin: 0px auto;
+        background: rgba(16, 20, 87, 0.8);
+        color: $tertiary-clr;
+        cursor: pointer;
+        text-align: center;
+        font-size: 1.6rem;
+        border-radius: 1rem;
+        transition: all 0.8s ease-out;
+        transform: translateY(100%);
+        h5 {
+            font-size: 2.5rem;
+            color: $tertiary-clr;
+            font-weight: 600;
+            font-family: $primary-font;
+            margin: 15px 0 0 0;
+        }
+        p {
+            color: rgba(255, 255, 255, 0.75);
+            line-height: normal;
+            padding: 0;
+            margin-top: 1rem;
+        }
+        a.btn-primary {
+            border-radius: 0.5rem;
+            padding: 0.8rem 2rem;
+            text-align: center;
+            margin: 1.5rem 0 0 0;
+            background: $tertiary-clr;
+            color: $primary-clr;
+            font-size: 1.4rem;
+            font-weight: 600s;
+            transition: all 0.3s ease-in-out;
+            font-family: $primary-font;
+            &:hover {
+                background: #101357;
+                color: $tertiary-clr;
+                box-shadow: rgba(255, 255, 255, 0.3) 0px 2px 8px 0px;
+            }
+        }
+    }
+
+    &:hover .caption{
+    transform: translateY(0);
+    }
+  }
+
+/*===== Service Item CSS =====*/
+
+/*===== BLOG BOX CSS =====*/
+.blog-box-style {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  margin: 1.5rem 0;
+  overflow: hidden;
+
+  &:hover {
+    // transform: translateY(-1rem);
+    .blog-img img {
+      transform: scale(1.1) rotate(3deg);
+    }
+  }
+  .blog-img {
+    overflow: hidden;
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    img {
+      transition: all 0.5s ease-in-out;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .blog-content {
+    padding: 1.5rem;
+    text-align: left;
+    &:hover h4 {
+      color: $active-clr;
+    }
+    a h4 {
+      font-size: 2rem;
+      font-weight:700;
+      text-decoration: none;
+      font-style: normal;
+      line-height: 3rem;
+      transition: all 0.5s ease-in-out;
+    }
+    p {
+      @extend %inner-desc;
+      margin: 0;
+      padding-top: 1.5rem;
+    }
+    .readMore_btn {
+      color: #FFF;
+      font-size: 1.6rem;
+      font-weight: 500;
+      font-family: $primary-font;
+      background: $primary-clr;
+      text-decoration: none;
+      font-style: normal;
+      line-height: normal;                         
+      padding: 0.8rem 2rem;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease-in-out;
+      margin-top: 3rem;
+      &:hover {
+        background: $active-clr;
+        color: $tertiary-clr;
+      }
+      
+    }
+  }
+}
+/*===== BLOG BOX END =====*/

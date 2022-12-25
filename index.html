@@ -1,90 +1,131 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="en">
+
 <head>
-	<meta name="generator" content="Hugo 0.54.0" />
-    <title>Grey</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
-    <style>
-        :root{--site-background : url("images/bg.jpg")};
-    </style> 
-    
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>
+		GREY
+	</title>
+	<link rel="shortcut Icon" href="./assets/images/thamp2.png" type="images/png">
+	<!-- Bootstrap-5 CSS -->
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+	<!-- wow Animation  -->
+	<link rel="stylesheet" href="./assets/css/animate.css">
+	<!--  Flat Icon CSS -->
+	<link rel="stylesheet" href="./assets/font/flaticon.css">
+	<!--  BoxIcons CSS -->
+	<link rel="stylesheet" href="./assets/css/boxicons.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css">
+
 </head>
 
+<body class="active">
+	<!-- Start Preloader Area -->
+	<div class="preloader">
+		<div class="loader">
+			<div class="bar1 bar"></div>
+			<div class="bar2 bar"></div>
+			<div class="bar3 bar"></div>
+			<div class="bar4 bar"></div>
+			<div class="bar5 bar"></div>
+			<div class="bar6 bar"></div>
+		</div>
+	</div>
+	<!-- End Preloader Area -->
+	<div class="main-wrapper">
+		<!-- Header top Area -->
+		<div class="header-top d-none d-md-block">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
+						<ul class="topbar-social-icon d-flex justify-content-start">
+							<li><a><i class='bx bxl-linkedin'></i></a></li>
+							<li><a><i class='bx bxl-facebook'></i></a></li>
+							<li><a><i class='bx bxl-twitter'></i></a></li>
+							<li><a><i class='bx bxl-whatsapp'></i></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<ul class="topbar-support screen-xl d-flex align-items-center">
+							<li> <a href="tel:+84962037205"><i class="flaticon-call"></i> <span
+										id="phone-number"></span> </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header top Area End -->
 
-<body class="is-preload">
-    <div id="wrapper">
-        <header id="header">
-            <!-- LOGO  -->
-            <div class="logo">
-                <span class="icon">
-                    <img src=images/greylogo.png>
-                </span>
-            </div>
+		<!-- header area start -->
+		<my-header></my-header>
+		<!--  header area end -->
 
-            <!-- CONTENT -->
-            <div class="content">
-                <div class="inner">
-                    <h1>Grey's World</h1>
-                    <span id="content"></span><span style="height:20px;width:20px;background-color:#ffffff79;">&nbsp;</span>
-                    <script>
-                        var menu = [
-                            "Hi Bae",
-                            "Welcome to Grey's world!",
-                            ],
-                            i = 0, j, item, html,
-                            e = document.getElementById("content"),
-                            doChar = function() {
-                            e.innerHTML += item[j++];
-                            if (j < item.length) {
-                                setTimeout(doChar, 100);
-                            }
-                            else {
-                                e.innerHTML += "<br/>";
-                                doItem();
-                            }
-                            },
-                            doItem = function() {
-                            if (i < menu.length) {
-                                item = menu[i++];
-                                j = 0;
-                                doChar();
-                            }
-                            };
-                        doItem();
-                        </script>
-                </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html"> 
-                        <span class="fas fa-home"></span> </a></li>
-                    <li><a href="blog/index.html">Blog</a></li>
-                    <li><a href="fun/index.html">4Fun</a></li>
-                    <li><a href="resume/index.html">Resume</a></li>
-                    <li><a href="about/index.html">About</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <div id="main"></div>
+		<!-- Slider area start -->
+		<my-slider></my-slider>
+		<!-- Slider area End -->
 
-        <footer id="footer">
-            <p class="copyright">&copy; Author: <a href="https://github.com/greyhub">Mr.Grey</a>.</p>
-        </footer>
-    </div>
-    <div id="bg"></div>
+		<!-- About us area start -->
+		<my-about></my-about>
+		<!-- About us area End -->
 
+		<!-- Experience area start -->
+		<my-experiences></my-experiences>
+		<!-- Experience b area End -->
+
+		<!-- Services area start -->
+		<!-- <my-service></my-service> -->
+		<!-- Services area End -->
+
+		<!-- Portfolil area start -->
+		<!-- <my-portfolio></my-portfolio> -->
+		<!-- Portfolio area End -->
+
+		<!-- Blog area start -->
+		<!-- <my-blog></my-blog> -->
+		<!-- Blog area End -->
+
+		<!-- Contact area start -->
+		<my-contact></my-contact>
+		<!-- Contact area End -->
+
+		<!-- footer area start -->
+		<my-footer></my-footer>
+		<!-- footer area end -->
+	</div>
+
+	<!--Javascript -->
+	<script src="./assets/js/jquery-2.2.4.min.js"></script>
+	<script src="./assets/js/jquery.min.js"></script>
+	<script src="./assets/js/wow.min.js"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<script src="./assets/js/popper.min.js"></script>
+	<script src="./assets/js/isotope.pkgd.min.js"></script>
+	<script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+	<!-- Custom JavaScript -->
+	<script src="./assets/js/info.js"></script>
+	<script src="./assets/js/components/my-header.js"></script>
+	<script src="./assets/js/components/my-slider.js"></script>
+	<script src="./assets/js/components/my-about.js"></script>
+	<script src="./assets/js/components/my-service.js"></script>
+	<script src="./assets/js/components/my-portfolio.js"></script>
+	<script src="./assets/js/components/my-blog.js"></script>
+	<script src="./assets/js/components/my-contact.js"></script>
+	<script src="./assets/js/components/my-experiences.js"></script>
+	<script src="./assets/js/components/my-footer.js"></script>
+	<script src="./assets/js/app.js"></script>
+	<script src="./assets/js/info-fill.js"></script>
+
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
 </body>
-
-
-<script src=assets/js/jquery.min.js></script>
-<script src=assets/js/browser.min.js></script>
-<script src=assets/js/breakpoints.min.js></script>
-<script src=assets/js/util.js></script>
-<script src=assets/js/main.js></script>
 
 </html>

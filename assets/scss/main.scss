@@ -1,0 +1,691 @@
+/*===== End Imports CSS Other Files =====*/
+/*
+========================================
+=========== Author Details =============
+========================================
+  Template name : custom componants;   "
+  Author : EM IMRUL KAYES;             "
+  Version : 1.0;                       "
+  Created : 24-09-2021;                 "
+  Last update : 24-09-2021;            "
+========================================
+========================================
+*/
+
+/*-------- CSS Index --------------
+-----------------------------------
+    1. Imports CSS 
+    2. Google Fonts
+    3. bootstrap icons
+    4. Global Setup
+    5. Boody Setup
+    6. HTML Font size Setup
+*/
+
+/*===== Imports CSS Other Files =====*/
+@import "partials/preloader";
+@import "partials/screen-mood";
+@import "partials/animation";
+@import "partials/header-one";
+@import "partials/variables";
+@import "partials/extends";
+@import "partials/navbar-top";
+@import "partials/searchbar";
+@import "partials/footer";
+@import "partials/banner";
+@import "partials/banner2";
+/*--- Google Fonts ---*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+/*--- bootstrap icons ---*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+/*--- Global Setup ---*/
+* {
+    box-sizing: border-box;
+    outline: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--- Boody Setup ---*/
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem;
+    position: relative;
+    font-family: $secondary-font;
+    background: $bg-clr;
+    h1, h2, h3, h4, h5, h6, .word, a {
+        color: $primary-clr;
+    }
+    p {
+        color: #000;
+    }
+    .btn {
+        color: $secondary-clr;
+    }
+    .btn-link {
+        color: $primary-clr;
+    }
+    .sticky {
+        ul li a {
+            color: $primary-clr;
+        }
+    }
+    .amimation {
+        background: $tertiary-clr;
+    }
+}
+body.active {
+    background: #000;
+    color: $secondary-clr;
+    h1, h2, h3, h4, h5, h6, .word, .primari-btn, a {
+        color: $secondary-clr;
+    }
+    .bg-active {
+        background: #000 !important;
+    }
+    p {
+        color: $tertiary-clr;
+        opacity: 0.8;
+    }
+    .btn, .btn-link {
+        color: $secondary-clr;
+    }
+    .amimation {
+        background: transparent;
+    }
+
+    i::before {
+        color: $tertiary-clr;
+    }
+    .header-area nav.main-nav ul.primary-menu li > ul.sub-menu > li a {
+        color: #FFF;
+    }
+}
+
+/*--- HTML Font size Setup ---*/
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+button, button:focus, .btn, .btn:focus, input, input:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.banner__slider-area {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9 )),
+        url(../images/blog_img1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+
+
+/*=== section inner Area css start ===*/
+.section-inner-content {
+    padding-bottom: 5rem;
+    .section-title {
+        h2 {
+            @extend %section-title;
+            span {
+                color: $active-clr;
+                &::before, &::after {
+                    display: none;
+                }
+            }
+        }
+        span {
+            position: relative;
+            &::before {
+                content: '';
+                width: 10rem;
+                height: 0.1rem;
+                position: absolute;
+                left: 1.5rem;
+                border: 1px solid;
+                border-color: $primary-clr;
+            }
+            &::after {
+                content: '';
+                width: 10rem;
+                height: 0.1rem;
+                position: absolute;
+                right: 1.5rem;
+                border: 1px solid;
+                border-color: $primary-clr;
+            }
+        }
+    }
+  
+    h6.sub-title {
+        @extend %sub-title-style;
+    }
+}
+/*=== section inner Area css end ===*/
+
+/*=== About Area css start ===*/
+.about-area {
+    .img-box {
+        max-width: 100%;
+        overflow: hidden;
+        border-radius: 1rem;
+        background: #b5b5b5;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .content-area {
+        padding-left: 1.5rem;
+        .inner-tile {
+            margin-bottom: 2.5rem;
+            h3.inner-content-title {
+                @extend %section-inner-title;
+            }
+            p {
+                @extend %section-inner-sub-title;
+            }
+        }
+        .inner-text p {
+            @extend %inner-desc;
+        }
+        .personal-info {
+            padding-top: 1.5rem;
+            h4 {
+                @extend %section-inner-title;
+                font-size: 2.2rem;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+            .info-list {
+                margin-bottom: 3rem;
+                ul {
+                    li {
+                        margin-bottom: 1.5rem;
+                        p {
+                            font-size: 1.6rem;
+                            font-weight: 500;
+                            font-family: $secondary-font;
+                            margin: 0;
+                            padding: 0;
+                            text-transform: capitalize;
+                            a {
+                                text-decoration: none;
+                            }
+                            span {
+                                opacity: 0.7;
+                            }
+                        }
+                    }
+                }
+            }
+            .download-btn {
+                @extend %download-btn-style;
+                &:hover {
+                    letter-spacing: .1rem;
+                }
+                
+            }
+        }
+    }
+}
+/*=== About Area css end ===*/
+
+/*=== Experience Area css start ===*/
+.experience-area {
+    ul.nav__menu {
+        padding-bottom: 3rem;
+        li.nav-item {
+            button.menu-item {
+                @extend %primary-btn-style;
+            }
+            button.active {
+                background: $active-clr;
+            }
+        }
+        li.nav-item:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+    .tab-item {
+        .ex {
+            padding: 3rem;
+            background: $tertiary-clr;
+            h4 {
+                margin-bottom: 3rem;
+                label {
+                    @extend %section-inner-title;
+                    padding: 1rem 2rem;
+                    font-weight: 500;
+                    font-size: 2.6rem;
+                    background: $bg-clr;
+                    border-radius: 0.5rem;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                }
+            }
+        }
+
+        // Education-Tab style //
+        .education-part {
+            .edu-list {
+                ul {
+                    li {
+                        padding: 2rem;
+                        background: $bg-clr;
+                        border-radius: 0.5rem;
+                        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                        span {
+                            font-size: 1.6rem;
+                            font-weight: 400;
+                        }
+                        p {
+                            margin: 1rem 0;
+                            line-height: 2.6rem;
+                            font-size: 1.6rem;
+                        }
+                    }
+                    li:not(:last-child) {
+                        margin-right: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        // Skills-Tab style //
+        .skills-part {
+            .skills-bar {
+                width: 100%;
+                padding: 2rem;
+                background: $bg-clr;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+                .bar {
+                    margin: 2rem 0;
+                    .info {
+                        margin-bottom: 0.5rem;
+                        span {
+                            font-size: 1.7rem;
+                            font-weight: 500;
+                        }
+                    }
+                    .progress-line {
+                        position: relative;
+                        height: 1.2rem;
+                        width: 100%;
+                        background: #c1c1c1;
+                        // box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),   
+                        //                 0px 1px rgba(255, 255, 255, 0.8);
+                        border-radius: 1rem;
+                        span {
+                            height: 100%;
+                            width: 80%;
+                            background: $primary-clr;
+                            position: absolute;
+                            border-radius: 1rem;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                height: 0;
+                                width: 0;
+                                right: 0;
+                                top: -1rem;
+                                border: 0.7rem solid transparent;
+                                border-bottom-width: 0;
+                                border-right-width: 0;
+                                border-top-color: #000;
+                            }
+                            &::after {
+                                position: absolute;
+                                right: 0;
+                                top: -2.8rem;
+                                background: #000;
+                                color: $tertiary-clr;
+                                font-size: 1.2rem;
+                                padding: 0.1rem 0.8rem;
+                                font-weight: 500;
+                                border-radius: 0.3rem;
+                            }
+                         
+                        }
+                    }
+
+                    .design span {
+                        width: 90%;
+                        &::after {
+                            content: '90%';
+                        }
+                    }
+                    .development span {
+                        width: 60%;
+                        &::after {
+                            content: '60%';
+                        }
+                    }
+                    .uiux span {
+                        width: 70%;
+                        &::after {
+                            content: '70%';
+                        }
+                    }
+                    .teaching span {
+                        width: 60%;
+                        &::after {
+                            content: '60%';
+                        }
+                    }
+                    .leadership span {
+                        width: 80%;
+                        &::after {
+                            content: '80%';
+                        }
+                    }
+
+                    .html span {
+                        width: 90%;
+                        &::after {
+                            content: '90%';
+                        }
+                    }
+                    .css span {
+                        width: 85%;
+                        &::after {
+                            content: '85%';
+                        }
+                    }
+                    .javascript span {
+                        width: 75%;
+                        &::after {
+                            content: '75%';
+                        }
+                    }
+                    .powerbi span {
+                        width: 60%;
+                        &::after {
+                            content: '60%';
+                        }
+                    }
+                    .sql span {
+                        width: 80%;
+                        &::after {
+                            content: '80%';
+                        }
+                    }
+                }
+                .bar:first-child {
+                    margin-top: 0;
+                }
+            
+            }
+             
+        }
+        
+        // Experience-Tab style //
+        .experience-part {
+            ul {
+                li {
+                    padding: 2rem;
+                    background: $bg-clr;
+                    border-radius: 0.5rem;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    h5 {
+                        @extend %section-inner-title;
+                        font-size: 2rem;
+                    }
+                    h6 {
+                        @extend %section-inner-sub-title;
+                        font-style: italic;
+                        margin-bottom: 1rem;
+                        font-size: 1.6rem;
+                    }
+                    
+                    span {
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                    }
+                    h4 {
+                        margin: 2rem 0;
+                        label {
+                            font-size: 1.4rem;
+                            line-height: normal;
+                            padding: 0.5rem 1rem;
+                        }
+                    }
+                    p {
+                        @extend %inner-desc;
+                    }
+                }
+                li:not(:last-child) {
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+
+    }
+}
+/*=== Experience Area css end ===*/
+
+/*=== Services area css start ===*/
+.services-area {
+    .service-items {
+        background: $tertiary-clr;
+        padding: 3rem 2rem 0 2rem;
+        .service-item {
+            @extend .service-item-style;
+            background: $bg-clr;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+    }
+}
+/*=== Services area css end ===*/
+
+/*=== Portfolio Area css start ===*/
+.portfolio-area {
+    .portfolio_wrapper {
+        position: relative;
+        .button-group {
+            padding-bottom: 2rem;
+          .button {
+            display: inline-block;
+            cursor: pointer;
+            font-size: 1.6rem;
+            padding: 0.5rem 2rem;
+            border-radius: 0.5rem;
+            background: $primary-clr;
+            color: $tertiary-clr;
+            margin-bottom: 1.5rem;
+            &:hover {
+              background: $active-clr;
+              color: $tertiary-clr;
+            }
+          }
+          .button:not(:last-child) {
+            margin-right: 0.5rem;
+          }
+          .button:active,
+          .button.is-checked {
+            background: $active-clr;
+          }
+        }
+        .button-group:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+
+        .portfolio-item-box {
+            .box-item {
+              .box-content {
+                ul {
+                  li {
+                    color: #101357;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                  }
+                }
+              }
+            }
+        }
+                
+        .element-item:not(:last-child)  {
+            margin-bottom: 3rem;
+        }
+    
+    }
+}
+/*=== Portfolio Area css end ===*/  
+
+/*=== Blog Area start ===*/
+.blog-area {
+    .blog-box {
+        @extend .blog-box-style;
+    }
+}
+/*=== Blog Area end ===*/
+
+/*=== Contact Area start ===*/
+.contact-area {
+    .contact-lines {
+        .single-contact-box {
+
+            h6.pc {
+                display: flex;
+                align-items: flex-end;
+                justify-content: start;
+                i:before {
+                    font-size: 2.8rem;
+                    font-weight: 900;
+                    margin-right: 1rem;
+                    vertical-align: middle;
+                    line-height: 3.2rem;
+                }
+                span {
+                    font-size: 2rem;
+                    font-weight: 500;
+                    font-family: $primary-font;
+                    text-transform: uppercase;
+                }
+            }
+            p {
+                margin-top: 1rem;
+                font-size: 2rem;
+                font-weight: 500;
+                font-family: $secondary-font;
+                font-style: normal;
+                line-height: normal;
+                a { 
+                    font-weight: 400;
+                }
+            }
+        }
+        .single-contact-box:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+    }
+
+
+    .contact-mailform {
+        p {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            line-height: 3.2rem;
+            font-family: $secondary-font;
+            opacity: 0.8;
+        }
+
+        .form-wrap {
+            .form-input {
+                font-size: 1.4rem;
+                font-weight: 500;
+                line-height: 2.6rem;
+                background: $tertiary-clr;
+                font-size: 1.5rem;
+                padding: 1.5rem 2rem;
+                width: 100%;
+                margin-bottom: 1.5rem;
+                border-radius: 0.5rem;
+                border: none;
+                border: 1px solid transparent;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                &:focus {
+                    border: 1px solid;
+                    border-color: $active-clr;
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+            .form-control {
+                height: 5rem;
+                
+            }
+        }
+
+        .form-button {
+            .btn-submit {
+                font-size: 1.6rem;
+                color: $tertiary-clr;
+                font-weight: 600;
+                background: $primary-clr;
+                padding: 0.8rem 2.5rem;
+                border-radius: 0.5rem;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background: $active-clr;
+                    color: $tertiary-clr;
+                }
+            }
+        }
+    }
+
+    .google_map {
+        margin-top: 8rem;
+    }
+}
+/*=== Contact Area end ===*/
+
+/*===== Imports CSS Other Files =====*/
+// @import "partials/preloader";
+// @import "partials/screen-mood";
+// @import "partials/animation";
+// @import "partials/header-one";
+// @import "partials/variables";
+// @import "partials/extends";
+// @import "partials/navbar-top";
+// @import "partials/searchbar";
+// @import "partials/footer";
+// @import "partials/banner";
+// @import "partials/banner2";

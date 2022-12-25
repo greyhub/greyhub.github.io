@@ -2324,61 +2324,61 @@ a {
   width: 90%;
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .design span::after {
-  /* content: "90%"; */
+  content: "90%";
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .development span {
   width: 60%;
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .development span::after {
-  /* content: "60%"; */
+  content: "60%";
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .uiux span {
   width: 70%;
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .uiux span::after {
-  /* content: "70%"; */
+  content: "70%";
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .teaching span {
   width: 60%;
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .teaching span::after {
-  /* content: "60%"; */
+  content: "60%";
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .leadership span {
   width: 80%;
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .leadership span::after {
-  /* content: "80%"; */
+  content: "80%";
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .html span {
   width: 90%;
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .html span::after {
-  /* content: "90%"; */
+  content: "90%";
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .css span {
   width: 85%;
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .css span::after {
-  /* content: "85%"; */
+  content: "85%";
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .javascript span {
   width: 75%;
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .javascript span::after {
-  /* content: "75%"; */
+  content: "75%";
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .powerbi span {
   width: 60%;
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .powerbi span::after {
-  /* content: "60%"; */
+  content: "60%";
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .sql span {
   width: 80%;
 }
 .experience-area .tab-item .skills-part .skills-bar .bar .sql span::after {
-  /* content: "80%"; */
+  content: "80%";
 }
 .experience-area .tab-item .skills-part .skills-bar .bar:first-child {
   margin-top: 0;

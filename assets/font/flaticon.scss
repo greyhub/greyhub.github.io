@@ -1,0 +1,225 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?bab3a637dbd83278060d98e298c29374") format("truetype"),
+url("./flaticon.woff?bab3a637dbd83278060d98e298c29374") format("woff"),
+url("./flaticon.woff2?bab3a637dbd83278060d98e298c29374") format("woff2"),
+url("./flaticon.eot?bab3a637dbd83278060d98e298c29374#iefix") format("embedded-opentype"),
+url("./flaticon.svg?bab3a637dbd83278060d98e298c29374#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "analytics": "\f101",
+    "arrow-angle-pointing-to-right": "\f102",
+    "back-left-arrow-circular-button-outline": "\f103",
+    "black-back-closed-envelope-shape": "\f104",
+    "branding": "\f105",
+    "bullhorn": "\f106",
+    "call": "\f107",
+    "clipboard": "\f108",
+    "code": "\f109",
+    "computer": "\f10a",
+    "double-checking": "\f10b",
+    "down-arrow": "\f10c",
+    "half-tiny-star": "\f10d",
+    "headphones-1": "\f10e",
+    "headphones": "\f10f",
+    "keyboard-right-arrow-button": "\f110",
+    "launch": "\f111",
+    "left-arrow": "\f112",
+    "maps-and-flags": "\f113",
+    "medal": "\f114",
+    "message-1": "\f115",
+    "message": "\f116",
+    "network": "\f117",
+    "notepad": "\f118",
+    "optimization": "\f119",
+    "phone-call-1": "\f11a",
+    "phone-call": "\f11b",
+    "pin": "\f11c",
+    "project-management": "\f11d",
+    "quotation-marks": "\f11e",
+    "right-arrow-1": "\f11f",
+    "right-arrow-angle": "\f120",
+    "right-arrow-circular-button-outline": "\f121",
+    "right-arrow": "\f122",
+    "right-quotation-mark": "\f123",
+    "satisfied": "\f124",
+    "searching-magnifying-glass": "\f125",
+    "smartphone": "\f126",
+    "star": "\f127",
+    "support": "\f128",
+    "technical-support": "\f129",
+    "thinking": "\f12a",
+    "time": "\f12b",
+    "value": "\f12c",
+    "vector": "\f12d",
+    "web-design": "\f12e",
+    "web-programming": "\f12f",
+    "web": "\f130",
+    "website-1": "\f131",
+    "website": "\f132",
+);
+
+.flaticon-analytics:before {
+    content: map-get($flaticon-map, "analytics");
+}
+.flaticon-arrow-angle-pointing-to-right:before {
+    content: map-get($flaticon-map, "arrow-angle-pointing-to-right");
+}
+.flaticon-back-left-arrow-circular-button-outline:before {
+    content: map-get($flaticon-map, "back-left-arrow-circular-button-outline");
+}
+.flaticon-black-back-closed-envelope-shape:before {
+    content: map-get($flaticon-map, "black-back-closed-envelope-shape");
+}
+.flaticon-branding:before {
+    content: map-get($flaticon-map, "branding");
+}
+.flaticon-bullhorn:before {
+    content: map-get($flaticon-map, "bullhorn");
+}
+.flaticon-call:before {
+    content: map-get($flaticon-map, "call");
+}
+.flaticon-clipboard:before {
+    content: map-get($flaticon-map, "clipboard");
+}
+.flaticon-code:before {
+    content: map-get($flaticon-map, "code");
+}
+.flaticon-computer:before {
+    content: map-get($flaticon-map, "computer");
+}
+.flaticon-double-checking:before {
+    content: map-get($flaticon-map, "double-checking");
+}
+.flaticon-down-arrow:before {
+    content: map-get($flaticon-map, "down-arrow");
+}
+.flaticon-half-tiny-star:before {
+    content: map-get($flaticon-map, "half-tiny-star");
+}
+.flaticon-headphones-1:before {
+    content: map-get($flaticon-map, "headphones-1");
+}
+.flaticon-headphones:before {
+    content: map-get($flaticon-map, "headphones");
+}
+.flaticon-keyboard-right-arrow-button:before {
+    content: map-get($flaticon-map, "keyboard-right-arrow-button");
+}
+.flaticon-launch:before {
+    content: map-get($flaticon-map, "launch");
+}
+.flaticon-left-arrow:before {
+    content: map-get($flaticon-map, "left-arrow");
+}
+.flaticon-maps-and-flags:before {
+    content: map-get($flaticon-map, "maps-and-flags");
+}
+.flaticon-medal:before {
+    content: map-get($flaticon-map, "medal");
+}
+.flaticon-message-1:before {
+    content: map-get($flaticon-map, "message-1");
+}
+.flaticon-message:before {
+    content: map-get($flaticon-map, "message");
+}
+.flaticon-network:before {
+    content: map-get($flaticon-map, "network");
+}
+.flaticon-notepad:before {
+    content: map-get($flaticon-map, "notepad");
+}
+.flaticon-optimization:before {
+    content: map-get($flaticon-map, "optimization");
+}
+.flaticon-phone-call-1:before {
+    content: map-get($flaticon-map, "phone-call-1");
+}
+.flaticon-phone-call:before {
+    content: map-get($flaticon-map, "phone-call");
+}
+.flaticon-pin:before {
+    content: map-get($flaticon-map, "pin");
+}
+.flaticon-project-management:before {
+    content: map-get($flaticon-map, "project-management");
+}
+.flaticon-quotation-marks:before {
+    content: map-get($flaticon-map, "quotation-marks");
+}
+.flaticon-right-arrow-1:before {
+    content: map-get($flaticon-map, "right-arrow-1");
+}
+.flaticon-right-arrow-angle:before {
+    content: map-get($flaticon-map, "right-arrow-angle");
+}
+.flaticon-right-arrow-circular-button-outline:before {
+    content: map-get($flaticon-map, "right-arrow-circular-button-outline");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-right-quotation-mark:before {
+    content: map-get($flaticon-map, "right-quotation-mark");
+}
+.flaticon-satisfied:before {
+    content: map-get($flaticon-map, "satisfied");
+}
+.flaticon-searching-magnifying-glass:before {
+    content: map-get($flaticon-map, "searching-magnifying-glass");
+}
+.flaticon-smartphone:before {
+    content: map-get($flaticon-map, "smartphone");
+}
+.flaticon-star:before {
+    content: map-get($flaticon-map, "star");
+}
+.flaticon-support:before {
+    content: map-get($flaticon-map, "support");
+}
+.flaticon-technical-support:before {
+    content: map-get($flaticon-map, "technical-support");
+}
+.flaticon-thinking:before {
+    content: map-get($flaticon-map, "thinking");
+}
+.flaticon-time:before {
+    content: map-get($flaticon-map, "time");
+}
+.flaticon-value:before {
+    content: map-get($flaticon-map, "value");
+}
+.flaticon-vector:before {
+    content: map-get($flaticon-map, "vector");
+}
+.flaticon-web-design:before {
+    content: map-get($flaticon-map, "web-design");
+}
+.flaticon-web-programming:before {
+    content: map-get($flaticon-map, "web-programming");
+}
+.flaticon-web:before {
+    content: map-get($flaticon-map, "web");
+}
+.flaticon-website-1:before {
+    content: map-get($flaticon-map, "website-1");
+}
+.flaticon-website:before {
+    content: map-get($flaticon-map, "website");
+}

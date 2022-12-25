@@ -1,0 +1,39 @@
+@import "./variables";
+
+.slider-area {
+    position: relative;
+    background: transparent;
+    padding-top: 5rem;
+    .slider-content {
+        text-align: left;
+        .animated-title {
+            position: relative;
+            h1 {
+                @extend %slider-title;
+            }
+            .word {
+                @extend %slider-title;
+                font-size: 3.2rem;
+                line-height: 4.8rem;
+                height: 8vmin;
+            }
+        }
+
+        p {
+            padding-top: 1rem;
+            padding-bottom: 2.5rem;
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 3.2rem;
+        }
+        .slider-button {
+            .banner-btn {
+                @extend %download-btn-style;
+                &:hover {
+                    letter-spacing: .1rem;
+                }
+            }
+        }
+    }
+}

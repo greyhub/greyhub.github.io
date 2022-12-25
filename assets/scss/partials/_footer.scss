@@ -1,0 +1,86 @@
+@import "./extends";
+
+
+
+/*=== Footer Area start ===*/
+.footer-area {
+  background: $secondary-clr;
+  padding-top: 5rem;
+  .social-area {
+      ul.social-links {
+          padding: 3rem 0;
+          
+          li {
+            position: relative;
+            &:hover {
+              .cs-tooltip {
+                display: block;
+              }
+              a i:before {
+                background: $active-clr;
+                color: $primary-clr;
+              }
+            }
+            .cs-tooltip {
+              font-size: 1.2rem;
+              font-weight: 500;
+              background: $primary-clr;
+              color: #FFFFFF;
+              letter-spacing: 0.75px;
+              text-align: center;
+              padding: 0.5rem 1rem;
+              border-radius: 0.3rem;
+              position: absolute;
+              top: -5rem;
+              left: 0;
+              transition: all 0.5s ease-in-out;
+              display: none;
+              z-index: 1;
+              &::before {
+                content: '';
+                width: 1rem;
+                height: 1rem;
+                background: $primary-clr;
+                position: absolute;
+                bottom: -3px;
+                transform: rotate(45deg);
+              }
+            }
+            a {
+              i:before {
+                font-size: 3rem;
+                background: $primary-clr;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                color: $secondary-clr;
+                border: 1px solid transparent;
+                transition: all 0.5s ease-in-out;
+              }
+            }
+          }
+          li:not(:last-child) {
+              margin-right: 1.5rem;
+          }
+      }
+  }
+}
+/*=== Footer Area end ===*/
+/*==== Copy Right =====*/
+.copy-right {
+  padding-bottom: 0.5rem;
+  p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+    margin: 0;
+    font-family: $secondary-font;
+    text-transform: capitalize;
+    a {
+    transition: all 0.3s ease-in-out;
+      &:hover {
+        color: $active-clr;
+      }
+    }
+  }
+}
+/*=== End FOOTER AREA ===*/

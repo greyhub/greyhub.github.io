@@ -8,12 +8,12 @@ class MyService extends HTMLElement {
                             <div class="section-inner-content text-center">
                                 <div class="section-title">
                                     <h2 class="wow animate fadeInUp" data-wow-duration="900ms" data-wow-delay="0s">Latest
-                                        Digital <span>services</span> </h2>
+                                        Digital <span>projects</span> </h2>
                                     <span class=" wow animate fadeInUp" data-wow-duration="1200ms"
                                         data-wow-delay="0s"></span>
                                 </div>
                                 <h6 class="sub-title wow animate fadeInUp" data-wow-duration="1500ms" data-wow-delay="0s">
-                                    I provide worldwide range of digital services
+                                    ...
                                 </h6>
                             </div>
                         </div>
@@ -30,10 +30,10 @@ class MyService extends HTMLElement {
                                     </div>
 
                                     <div class="box_innerContent text-center">
-                                        <h3><a href="#">UI/UX Design</a> </h3>
-                                        <p>There are many Ipsum variations of passages of Lorem Ipsum available.</p>
+                                        <h3><a href="https://vingioco.netlify.app/">Virtual Office</a> </h3>
+                                        <p>Metaverse web2d application in the workplace interactive environment.</p>
 
-                                        <a href="#" class="btn btn-link btn_learnMore">Learn More <i
+                                        <a href="https://youtube.com/playlist?list=PLYQy4ERZcqhlNxV0Z0rqaRnrJ__379rZp" class="btn btn-link btn_learnMore">Learn More <i
                                                 class="flaticon-right-arrow-1"></i></a>
 
                                     </div>
@@ -46,8 +46,8 @@ class MyService extends HTMLElement {
                                         <i class="flaticon-web-programming"></i>
                                     </div>
                                     <div class="box_innerContent text-center">
-                                        <h3><a href="#">Web Development</a> </h3>
-                                        <p>There are many Ipsum variations of passages of Lorem Ipsum available.</p>
+                                        <h3><a href="#">Launch</a> </h3>
+                                        <p>Dashboard about milestones of many products.</p>
                                         <a href="#" class="btn btn-link btn_learnMore">Learn More <i
                                                 class="flaticon-right-arrow-1"></i></a>
                                     </div>
@@ -61,9 +61,9 @@ class MyService extends HTMLElement {
                                     </div>
 
                                     <div class="box_innerContent text-center">
-                                        <h3><a href="#">Digital Marketing</a> </h3>
-                                        <p>There are many Ipsum variations of passages of Lorem Ipsum available.</p>
-                                        <a href="#" class="btn btn-link btn_learnMore">Learn More <i
+                                        <h3><a href="https://github.com/greyhub/HORA">HORA</a> </h3>
+                                        <p>Mobile App and Data Science for hotel service.</p>
+                                        <a href="https://drive.google.com/file/d/11fWGz9PdfIEDmRVMUB7d2wlLg1SWEosr/view?usp=share_link" class="btn btn-link btn_learnMore">Learn More <i
                                                 class="flaticon-right-arrow-1"></i></a>
                                     </div>
                                 </div>
@@ -76,9 +76,9 @@ class MyService extends HTMLElement {
                                     </div>
 
                                     <div class="box_innerContent text-center">
-                                        <h3><a href="#">Graphic Design</a> </h3>
-                                        <p>There are many Ipsum variations of passages of Lorem Ipsum available.</p>
-                                        <a href="#" class="btn btn-link btn_learnMore">Learn More <i
+                                        <h3><a href="https://github.com/greyhub/calendar_manager">Calendar Management</a> </h3>
+                                        <p>Time Management System integrated Google Calendar.</p>
+                                        <a href="https://drive.google.com/drive/folders/1Dk4KwAwdCrqQ9vKlNhyQY6XCVwpuXdH5?usp=share_link" class="btn btn-link btn_learnMore">Learn More <i
                                                 class="flaticon-right-arrow-1"></i></a>
                                     </div>
                                 </div>
@@ -91,9 +91,9 @@ class MyService extends HTMLElement {
                                     </div>
 
                                     <div class="box_innerContent text-center">
-                                        <h3><a href="#">App Development</a> </h3>
-                                        <p>There are many Ipsum variations of passages of Lorem Ipsum available.</p>
-                                        <a href="#" class="btn btn-link btn_learnMore">Learn More <i
+                                        <h3><a href="https://github.com/greyhub/job_center">Job Center</a> </h3>
+                                        <p>Crawl, matching and explore data about jobs in Viet Nam.</p>
+                                        <a href="https://drive.google.com/file/d/1ZRzUxh9BZwOSm_VnFfh-369YSLNUiNlU/view?usp=share_link" class="btn btn-link btn_learnMore">Learn More <i
                                                 class="flaticon-right-arrow-1"></i></a>
                                     </div>
                                 </div>
@@ -106,9 +106,9 @@ class MyService extends HTMLElement {
                                     </div>
 
                                     <div class="box_innerContent text-center">
-                                        <h3><a href="#">Web Design</a> </h3>
-                                        <p>There are many Ipsum variations of passages of Lorem Ipsum available.</p>
-                                        <a href="#" class="btn btn-link btn_learnMore">Learn More <i
+                                        <h3><a href="https://trek.fund/">TREK Landing page</a> </h3>
+                                        <p>The next gen of IPO powered by web3 technology and metaverse platform.</p>
+                                        <a href="https://trek.fund/" class="btn btn-link btn_learnMore">Learn More <i
                                                 class="flaticon-right-arrow-1"></i></a>
                                     </div>
                                 </div>

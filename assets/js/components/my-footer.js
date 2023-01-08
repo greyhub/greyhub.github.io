@@ -9,27 +9,19 @@ class MyFooter extends HTMLElement {
                         <ul class="social-links d-flex align-items-center justify-content-center">
                             <li class="wow animate fadeInLeft" data-wow-duration="600ms" data-wow-delay="0s">
                                 <div class="cs-tooltip">LinkedIn</div>
-                                <a href="#" class="social-button"><i class='bx bxl-linkedin'></i></a>
+                                <a href="https://www.linkedin.com/in/greyng/" class="social-button"><i class='bx bxl-linkedin'></i></a>
                             </li>
                             <li class="wow animate fadeInLeft" data-wow-duration="1100ms" data-wow-delay="0s">
                                 <div class="cs-tooltip">Facebook</div>
-                                <a href="#" class="social-button"><i class="bx bxl-facebook"></i></a>
+                                <a href="https://www.facebook.com/luongnv.grey/" class="social-button"><i class="bx bxl-facebook"></i></a>
                             </li>
                             <li class="wow animate fadeInLeft" data-wow-duration="1600ms" data-wow-delay="0s">
-                                <div class="cs-tooltip">Twitter</div>
-                                <a href="#" class="social-button"><i class="bx bxl-twitter"></i></a>
+                                <div class="cs-tooltip">Github</div>
+                                <a href="https://github.com/greyhub" class="social-button"><i class="bx bxl-github"></i></a>
                             </li>
                             <li class="wow animate fadeInLeft" data-wow-duration="2100ms" data-wow-delay="0s">
-                                <div class="cs-tooltip">Pinterest</div>
-                                <a href="#" class="social-button"><i class="bx bxl-pinterest-alt"></i></a>
-                            </li>
-                            <li class="wow animate fadeInLeft" data-wow-duration="2600ms" data-wow-delay="0s">
-                                <div class="cs-tooltip">Dribbble</div>
-                                <a href="#" class="social-button"><i class="bx bxl-dribbble"></i></a>
-                            </li>
-                            <li class="wow animate fadeInLeft" data-wow-duration="3000ms" data-wow-delay="0s">
-                                <div class="cs-tooltip">Github</div>
-                                <a href="#" class="social-button"><i class='bx bxl-github'></i></a>
+                                <div class="cs-tooltip">Youtube</div>
+                                <a href="https://www.youtube.com/@luong5933" class="social-button"><i class="bx bxl-youtube"></i></a>
                             </li>
                         </ul>
                     </div>

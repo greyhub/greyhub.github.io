@@ -17,9 +17,7 @@ class MyHeader extends HTMLElement {
                             </ul>
                         </li>
                         <li><a href="#about" class="nav-link">About </a></li>
-                        <li><a href="#service" class="nav-link">Service</a></li>
-                        <li><a href="#Portfolio" class="nav-link">Portfolio</a></li>
-                        <li><a href="#blog" class="nav-link">News</a></li>
+                        <li><a href="#service" class="nav-link">Project</a></li>
                     </ul>
 
                     <div class="sidebar-support d-block d-md-none">
@@ -33,19 +31,19 @@ class MyHeader extends HTMLElement {
                         <ul class="navbar-social-icon d-flex justify-content-start">
                             <li>
                                 <div class="cs-tooltip">LinkedIn</div>
-                                <a href="#" class="social-button"><i class='bx bxl-linkedin'></i></a>
+                                <a href="https://www.linkedin.com/in/greyng/" class="social-button"><i class='bx bxl-linkedin'></i></a>
                             </li>
                             <li>
                                 <div class="cs-tooltip">Facebook</div>
-                                <a href="#" class="social-button"><i class="bx bxl-facebook"></i></a>
+                                <a href="https://www.facebook.com/luongnv.grey/" class="social-button"><i class="bx bxl-facebook"></i></a>
                             </li>
                             <li>
-                                <div class="cs-tooltip">Twitter</div>
-                                <a href="#" class="social-button"><i class="bx bxl-twitter"></i></a>
+                                <div class="cs-tooltip">Github</div>
+                                <a href="https://github.com/greyhub" class="social-button"><i class="bx bxl-github"></i></a>
                             </li>
                             <li>
-                                <div class="cs-tooltip">Whatsapp</div>
-                                <a href="#" class="social-button"><i class='bx bxl-whatsapp'></i></a>
+                                <div class="cs-tooltip">Youtube</div>
+                                <a href="https://www.youtube.com/@luong5933" class="social-button"><i class='bx bxl-youtube'></i></a>
                             </li>
                         </ul>
                     </div>

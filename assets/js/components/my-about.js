@@ -67,7 +67,7 @@ class MyAbout extends HTMLElement {
                                     </li>
                                 </ul>
                             </div>
-                            <a href="./assets/images/CV.pdf" download class="btn download-btn wow animate fadeInUp"
+                            <a href="https://drive.google.com/file/d/1vobpnTDLNa6sBEm5SKkHt5iBgseTXZoe/view?usp=sharing" download class="btn download-btn wow animate fadeInUp"
                                 data-wow-duration="2000ms" data-wow-delay="0s"> Download CV <i
                                     class="bi bi-download"></i></a>
                         </div>

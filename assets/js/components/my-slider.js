@@ -43,7 +43,7 @@ class MySlider extends HTMLElement {
                             I have knowledge about Computer Science, Data, AI.<br>
                             In addition, I also have basic knowledge about game, bioinformatics.</p>
                         <div class="slider-button">
-                            <a href="./assets/images/CV.pdf" download class="btn banner-btn">Download CV <i
+                            <a href="https://drive.google.com/file/d/1vobpnTDLNa6sBEm5SKkHt5iBgseTXZoe/view?usp=sharing" download class="btn banner-btn">Download CV <i
                                     class="bi bi-download"></i></a>
                         </div>
                     </div>

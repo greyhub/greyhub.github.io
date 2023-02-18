@@ -33,7 +33,7 @@ class MyService extends HTMLElement {
                                         <h3><a href="https://vingioco.netlify.app/">Virtual Office</a> </h3>
                                         <p>Metaverse web2d application in the workplace interactive environment.</p>
 
-                                        <a href="https://youtube.com/playlist?list=PLYQy4ERZcqhlNxV0Z0rqaRnrJ__379rZp" class="btn btn-link btn_learnMore">Learn More <i
+                                        <a href="https://youtu.be/tqruNwggo-4" class="btn btn-link btn_learnMore">Learn More <i
                                                 class="flaticon-right-arrow-1"></i></a>
 
                                     </div>
@@ -61,9 +61,9 @@ class MyService extends HTMLElement {
                                     </div>
 
                                     <div class="box_innerContent text-center">
-                                        <h3><a href="https://github.com/greyhub/HORA">HORA</a> </h3>
+                                        <h3><a href="https://youtu.be/d80FFCd5vts">HORA</a> </h3>
                                         <p>Mobile App and Data Science for hotel service.</p>
-                                        <a href="https://drive.google.com/file/d/11fWGz9PdfIEDmRVMUB7d2wlLg1SWEosr/view?usp=share_link" class="btn btn-link btn_learnMore">Learn More <i
+                                        <a href="https://youtu.be/d80FFCd5vts" class="btn btn-link btn_learnMore">Learn More <i
                                                 class="flaticon-right-arrow-1"></i></a>
                                     </div>
                                 </div>
@@ -76,9 +76,9 @@ class MyService extends HTMLElement {
                                     </div>
 
                                     <div class="box_innerContent text-center">
-                                        <h3><a href="https://github.com/greyhub/calendar_manager">Calendar Management</a> </h3>
+                                        <h3><a href="https://youtu.be/jTytTRI4Uss">Calendar Management</a> </h3>
                                         <p>Time Management System integrated Google Calendar.</p>
-                                        <a href="https://drive.google.com/drive/folders/1Dk4KwAwdCrqQ9vKlNhyQY6XCVwpuXdH5?usp=share_link" class="btn btn-link btn_learnMore">Learn More <i
+                                        <a href="https://youtu.be/jTytTRI4Uss" class="btn btn-link btn_learnMore">Learn More <i
                                                 class="flaticon-right-arrow-1"></i></a>
                                     </div>
                                 </div>

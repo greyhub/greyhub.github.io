@@ -30,7 +30,7 @@ class MyService extends HTMLElement {
                                     </div>
 
                                     <div class="box_innerContent text-center">
-                                        <h3><a href="https://vingioco.netlify.app/">Virtual Office</a> </h3>
+                                        <h3><a href="https://youtu.be/tqruNwggo-4">Virtual Office</a> </h3>
                                         <p>Metaverse web2d application in the workplace interactive environment.</p>
 
                                         <a href="https://youtu.be/tqruNwggo-4" class="btn btn-link btn_learnMore">Learn More <i

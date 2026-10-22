@@ -80,6 +80,134 @@
   animation: hv-float 9s ease-in-out infinite;
 }
 
+/* cartoon variant: wider figure, halo and orbit follow its proportions */
+.hero-visual--cartoon .hv-figure-wrap {
+  width: 72%;
+}
+
+.hero-visual--cartoon .hv-halo {
+  top: 8%;
+  width: 54%;
+}
+
+.hero-visual--cartoon .hv-orbit {
+  top: 68%;
+}
+
+.cartoon-avatar {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.cartoon-avatar g {
+  transform-box: view-box;
+}
+
+.ca-body {
+  transform-origin: 160px 420px;
+  animation: ca-breathe 4s ease-in-out infinite;
+}
+
+.ca-head {
+  transform-origin: 160px 250px;
+  animation: ca-tilt 7s ease-in-out infinite;
+}
+
+.ca-eyes {
+  transform-origin: 160px 154px;
+  animation: ca-blink 4.6s infinite;
+}
+
+.ca-forearm {
+  transform-origin: 36px 344px;
+  animation: ca-wave 6s ease-in-out infinite;
+}
+
+.ca-brows {
+  animation: ca-brows 6s ease-in-out infinite;
+}
+
+.ca-glint {
+  animation: ca-glint 5s ease-in-out infinite;
+}
+
+@keyframes ca-breathe {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.012, 1.018);
+  }
+}
+
+@keyframes ca-tilt {
+  0%,
+  100% {
+    transform: rotate(-2deg) translateY(0);
+  }
+  50% {
+    transform: rotate(2.5deg) translateY(-3px);
+  }
+}
+
+@keyframes ca-blink {
+  0%,
+  90%,
+  100% {
+    transform: scaleY(1);
+  }
+  93% {
+    transform: scaleY(0.08);
+  }
+  96% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes ca-wave {
+  0%,
+  45%,
+  85%,
+  100% {
+    transform: rotate(0deg);
+  }
+  52%,
+  66% {
+    transform: rotate(-16deg);
+  }
+  59%,
+  73% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes ca-brows {
+  0%,
+  45%,
+  85%,
+  100% {
+    transform: translateY(0);
+  }
+  52%,
+  78% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes ca-glint {
+  0%,
+  60% {
+    transform: translateX(0);
+  }
+  85%,
+  100% {
+    transform: translateX(130px);
+  }
+}
+
 /* orbit */
 .hv-orbit {
   position: absolute;

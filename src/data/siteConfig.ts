@@ -60,6 +60,8 @@ export interface SiteConfig {
     organization: string;
     /** Alt text for the hero portrait (image file: src/assets/portrait.webp). */
     portraitAlt: Localized;
+    /** Accessible label for the animated cartoon avatar. */
+    avatarAlt: Localized;
   };
   contact: {
     email: string;
@@ -87,6 +89,8 @@ export interface SiteConfig {
     /** Portion of the headline to emphasise visually; must appear verbatim in `headline`. */
     headlineEmphasis: Localized;
     description: Localized;
+    /** Figure at the centre of the hero visual: the photo portrait or the animated cartoon. */
+    figure: "photo" | "cartoon";
     /** Focus areas orbiting the figure in the hero visual (best with 3). */
     orbit: OrbitItem[];
   };
@@ -111,6 +115,10 @@ export const siteConfig: SiteConfig = {
     portraitAlt: {
       vi: "Ảnh chân dung Luong Nguyen Van (Grey)",
       en: "Portrait of Luong Nguyen Van (Grey)",
+    },
+    avatarAlt: {
+      vi: "Hình hoạt hình Luong Nguyen Van (Grey) đang vẫy tay chào",
+      en: "Animated cartoon of Luong Nguyen Van (Grey) waving hello",
     },
   },
   contact: {
@@ -150,6 +158,7 @@ export const siteConfig: SiteConfig = {
       vi: "Từ chiến lược và quản trị dữ liệu đến phân tích, sản phẩm số và triển khai thực tế.",
       en: "From data strategy and governance to analytics, digital products, and delivery.",
     },
+    figure: "cartoon",
     orbit: [
       { id: "data", icon: "analytics", label: { vi: "Dữ liệu", en: "Data" } },
       { id: "creative-web", icon: "web", label: { vi: "Web sáng tạo", en: "Creative Web" } },

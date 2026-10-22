@@ -2,10 +2,11 @@ import { useEffect, useRef, type CSSProperties } from "react";
 import { siteConfig } from "../data/siteConfig";
 import { useLanguage } from "../i18n/LanguageContext";
 import portrait from "../assets/portrait.webp";
+import { CartoonAvatar } from "./CartoonAvatar";
 import { Icon } from "./Icon";
 
 /**
- * Hero composition: the portrait (transparent cut-out) with the configured focus areas
+ * Hero composition: the portrait or animated cartoon (siteConfig.hero.figure) with the configured focus areas
  * (siteConfig.hero.orbit) orbiting on a tilted ring, in CSS 3D. The portrait carries alt
  * text; the decorative layers and orbit chips are aria-hidden (the hero text states the same).
  * - Orbit chips pass behind the portrait via preserve-3d depth.
@@ -15,7 +16,7 @@ import { Icon } from "./Icon";
 export function HeroVisual() {
   const ref = useRef<HTMLDivElement>(null);
   const { pick } = useLanguage();
-  const { person } = siteConfig;
+  const { person, hero } = siteConfig;
   const items = siteConfig.hero.orbit;
 
   useEffect(() => {
@@ -52,7 +53,7 @@ export function HeroVisual() {
   }, []);
 
   return (
-    <div ref={ref} className="hero-visual">
+    <div ref={ref} className={`hero-visual hero-visual--${hero.figure}`}>
       <div className="hv-glow hv-glow--a" aria-hidden="true" />
       <div className="hv-glow hv-glow--b" aria-hidden="true" />
       <div className="hv-halo" aria-hidden="true" />
@@ -60,15 +61,19 @@ export function HeroVisual() {
       <div className="hv-stage">
         <div className="hv-scene">
           <div className="hv-figure-wrap">
-            <img
-              className="hv-portrait"
-              src={portrait}
-              alt={pick(person.portraitAlt)}
-              width={362}
-              height={528}
-              decoding="async"
-              fetchPriority="high"
-            />
+            {hero.figure === "cartoon" ? (
+              <CartoonAvatar label={pick(person.avatarAlt)} />
+            ) : (
+              <img
+                className="hv-portrait"
+                src={portrait}
+                alt={pick(person.portraitAlt)}
+                width={362}
+                height={528}
+                decoding="async"
+                fetchPriority="high"
+              />
+            )}
           </div>
 
           <div className="hv-orbit" aria-hidden="true">

@@ -58,6 +58,8 @@ export interface SiteConfig {
     monogram: string;
     title: string;
     organization: string;
+    /** Alt text for the hero portrait (image file: src/assets/portrait.webp). */
+    portraitAlt: Localized;
   };
   contact: {
     email: string;
@@ -106,6 +108,10 @@ export const siteConfig: SiteConfig = {
     monogram: "NVL",
     title: "CEO & Founder of DGNA",
     organization: "DGNA",
+    portraitAlt: {
+      vi: "Ảnh chân dung Luong Nguyen Van (Grey)",
+      en: "Portrait of Luong Nguyen Van (Grey)",
+    },
   },
   contact: {
     email: "luongnv@dgna.vn",

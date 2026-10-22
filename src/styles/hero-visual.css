@@ -1,5 +1,5 @@
-/* Hero composition (see components/HeroVisual.tsx): a stylised executive bust with focus
-   areas orbiting on a tilted ring. Sizes use container units of .hero-visual so the
+/* Hero composition (see components/HeroVisual.tsx): the portrait with focus areas
+   orbiting on a tilted ring. Sizes use container units of .hero-visual so the
    piece scales from mobile to desktop. */
 
 .hero-visual {
@@ -36,8 +36,8 @@
 .hv-halo {
   position: absolute;
   left: 50%;
-  top: 8%;
-  width: 52%;
+  top: 0;
+  width: 50%;
   aspect-ratio: 1;
   border-radius: 50%;
   transform: translateX(-50%);
@@ -61,20 +61,22 @@
   transition: transform 900ms var(--ease-out);
 }
 
-/* figure: a flat plane at z = 0, so orbiting chips behind it are hidden */
+/* portrait: a flat plane at z = 0, so orbiting chips behind it are hidden */
 .hv-figure-wrap {
   position: absolute;
   left: 50%;
   bottom: 0;
   width: 64%;
   transform: translateX(-50%) translateZ(0);
-  filter: drop-shadow(0 24px 40px color-mix(in srgb, var(--accent) 22%, transparent));
+  filter: var(--hv-portrait-shadow);
 }
 
-.hv-figure {
+.hv-portrait {
   display: block;
   width: 100%;
   height: auto;
+  -webkit-mask-image: linear-gradient(to bottom, #000 84%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 84%, transparent 100%);
   animation: hv-float 9s ease-in-out infinite;
 }
 
@@ -82,7 +84,7 @@
 .hv-orbit {
   position: absolute;
   left: 50%;
-  top: 70%;
+  top: 57%;
   width: var(--orbit-size);
   aspect-ratio: 1;
   transform-style: preserve-3d;

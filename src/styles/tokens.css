@@ -57,17 +57,7 @@
   --hv-core-3: #6f7ff0;
   --hv-panel: rgba(255, 255, 255, 0.55);
   --hv-panel-line: rgba(30, 40, 90, 0.16);
-  --hv-suit-1: #2c3560;
-  --hv-suit-2: #0e1330;
-  --hv-lapel-1: #3b4678;
-  --hv-shirt-1: #ffffff;
-  --hv-shirt-2: #dfe4f1;
-  --hv-skin-1: #fff4ec;
-  --hv-skin-2: #ecd5c4;
-  --hv-skin-3: #c3a08b;
-  --hv-hair-1: #23262f;
-  --hv-hair-2: #0b0c12;
-  --hv-hair-hi: #5d6478;
+  --hv-portrait-shadow: drop-shadow(0 24px 40px rgba(59, 77, 219, 0.22));
 }
 
 :root[data-theme="dark"] {
@@ -102,15 +92,6 @@
   --hv-core-3: #1c2370;
   --hv-panel: rgba(30, 36, 58, 0.5);
   --hv-panel-line: rgba(200, 210, 255, 0.2);
-  --hv-suit-1: #323c6e;
-  --hv-suit-2: #12162e;
-  --hv-lapel-1: #45518a;
-  --hv-shirt-1: #eef0f8;
-  --hv-shirt-2: #b9c0d6;
-  --hv-skin-1: #f6e6da;
-  --hv-skin-2: #d5b6a2;
-  --hv-skin-3: #93725f;
-  --hv-hair-1: #2b2e3c;
-  --hv-hair-2: #0e1018;
-  --hv-hair-hi: #737c9e;
+  /* rim light separates the dark suit from the dark background */
+  --hv-portrait-shadow: drop-shadow(0 0 1px rgba(190, 200, 255, 0.55)) drop-shadow(0 0 22px rgba(120, 135, 255, 0.35));
 }

@@ -1,9 +1,13 @@
-/* Abstract hero composition (see components/HeroVisual.tsx). Sizes are relative to the
-   square container so the piece scales cleanly from mobile to desktop. */
+/* Hero composition (see components/HeroVisual.tsx): a stylised executive bust with focus
+   areas orbiting on a tilted ring. Sizes use container units of .hero-visual so the
+   piece scales from mobile to desktop. */
 
 .hero-visual {
   --tilt-x: 0deg;
   --tilt-y: 0deg;
+  --orbit-tilt: 76deg;
+  --orbit-size: 88cqi;
+  --orbit-duration: 26s;
   position: absolute;
   inset: 0;
   container-type: inline-size;
@@ -17,54 +21,36 @@
 }
 
 .hv-glow--a {
-  inset: 10% 14% 22% 8%;
-  background: radial-gradient(circle at 40% 40%, var(--hv-glow-a), transparent 65%);
+  inset: 4% 16% 30% 12%;
+  background: radial-gradient(circle at 45% 40%, var(--hv-glow-a), transparent 65%);
   animation: hv-breathe 12s ease-in-out infinite;
 }
 
 .hv-glow--b {
-  inset: 34% 4% 6% 30%;
-  background: radial-gradient(circle at 60% 60%, var(--hv-glow-b), transparent 65%);
+  inset: 40% 6% 0 28%;
+  background: radial-gradient(circle at 55% 60%, var(--hv-glow-b), transparent 65%);
   animation: hv-breathe 14s ease-in-out infinite reverse;
 }
 
-/* faint data network */
-.hv-network {
+/* glass disc behind the head */
+.hv-halo {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
+  left: 50%;
+  top: 8%;
+  width: 52%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  border: 1px solid var(--border);
+  background: radial-gradient(circle at 35% 30%, var(--glass-highlight), transparent 60%), var(--hv-panel);
+  box-shadow: inset 0 1px 0 var(--glass-highlight), var(--shadow);
 }
 
-.hv-network__lines path {
-  fill: none;
-  stroke: var(--hv-line);
-  stroke-width: 1;
-}
-
-.hv-network__pulse {
-  fill: none;
-  stroke: var(--accent);
-  stroke-width: 1.4;
-  stroke-linecap: round;
-  stroke-dasharray: 40 520;
-  opacity: 0.7;
-  animation: hv-pulse 7s linear infinite;
-}
-
-.hv-network__nodes circle {
-  fill: var(--surface-solid);
-  stroke: var(--hv-ring);
-  stroke-width: 1.2;
-}
-
-/* 3D stage */
 .hv-stage {
   position: absolute;
   inset: 0;
-  perspective: 1100px;
-  perspective-origin: 50% 45%;
+  perspective: 1200px;
+  perspective-origin: 50% 40%;
 }
 
 .hv-scene {
@@ -75,209 +61,110 @@
   transition: transform 900ms var(--ease-out);
 }
 
-/* glass core */
-.hv-core {
+/* figure: a flat plane at z = 0, so orbiting chips behind it are hidden */
+.hv-figure-wrap {
   position: absolute;
   left: 50%;
-  top: 50%;
-  width: 34%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  transform: translate(-50%, -50%) translateZ(40px);
-  background:
-    radial-gradient(circle at 32% 28%, var(--hv-core-1) 0%, transparent 32%),
-    radial-gradient(circle at 50% 50%, var(--hv-core-2) 0%, var(--hv-core-3) 78%, transparent 100%);
-  box-shadow:
-    inset -18px -22px 40px rgba(10, 15, 60, 0.35),
-    inset 10px 12px 30px rgba(255, 255, 255, 0.35),
-    0 30px 60px -20px color-mix(in srgb, var(--accent) 60%, transparent);
+  bottom: 0;
+  width: 64%;
+  transform: translateX(-50%) translateZ(0);
+  filter: drop-shadow(0 24px 40px color-mix(in srgb, var(--accent) 22%, transparent));
+}
+
+.hv-figure {
+  display: block;
+  width: 100%;
+  height: auto;
   animation: hv-float 9s ease-in-out infinite;
 }
 
-.hv-core__shine {
-  position: absolute;
-  inset: 8%;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  -webkit-mask-image: linear-gradient(160deg, #000 0%, transparent 55%);
-  mask-image: linear-gradient(160deg, #000 0%, transparent 55%);
-}
-
-/* orbital rings */
+/* orbit */
 .hv-orbit {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 70%;
+  width: var(--orbit-size);
   aspect-ratio: 1;
   transform-style: preserve-3d;
+  transform: translate(-50%, -50%) rotateX(var(--orbit-tilt));
 }
 
-.hv-orbit--1 {
-  width: 64%;
-  transform: translate(-50%, -50%) rotateX(72deg) rotateY(-12deg);
-}
-
-.hv-orbit--2 {
-  width: 82%;
-  transform: translate(-50%, -50%) rotateX(64deg) rotateY(28deg);
-}
-
-.hv-orbit--3 {
-  width: 50%;
-  transform: translate(-50%, -50%) rotateX(20deg) rotateY(70deg);
-}
-
-.hv-ring {
+.hv-orbit__ring {
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  border: 1px solid var(--hv-ring);
-  animation: hv-spin 26s linear infinite;
+  border: 1.5px solid var(--hv-ring);
+  box-shadow: 0 0 24px color-mix(in srgb, var(--accent) 18%, transparent);
 }
 
-.hv-orbit--2 .hv-ring {
+.hv-orbit__ring--inner {
+  inset: 9%;
+  border-width: 1px;
   border-style: dashed;
-  border-color: color-mix(in srgb, var(--hv-ring) 70%, transparent);
-  animation-duration: 40s;
-  animation-direction: reverse;
+  border-color: color-mix(in srgb, var(--hv-ring) 60%, transparent);
+  box-shadow: none;
+  animation: hv-spin calc(var(--orbit-duration) * 1.6) linear infinite reverse;
 }
 
-.hv-orbit--3 .hv-ring {
-  animation-duration: 18s;
-}
-
-.hv-ring__node {
+.hv-orbit__spin {
   position: absolute;
-  top: -5px;
-  left: calc(50% - 5px);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 4px var(--accent-soft), 0 0 16px var(--accent);
+  inset: 0;
+  transform-style: preserve-3d;
+  animation: hv-spin var(--orbit-duration) linear infinite;
 }
 
-.hv-orbit--2 .hv-ring__node {
-  background: var(--accent-2);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-2) 15%, transparent), 0 0 16px var(--accent-2);
-}
-
-/* floating glass panels */
-.hv-panel {
+.hv-orbit__arm {
   position: absolute;
-  border-radius: clamp(10px, 3.2cqi, 18px);
-  border: 1px solid var(--border-strong);
-  background: var(--hv-panel);
-  -webkit-backdrop-filter: blur(14px) saturate(1.4);
-  backdrop-filter: blur(14px) saturate(1.4);
-  box-shadow:
-    var(--shadow),
-    inset 0 1px 0 var(--glass-highlight);
-  animation: hv-drift 10s ease-in-out infinite;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  transform-style: preserve-3d;
+  transform: rotateZ(var(--angle)) translateY(calc(var(--orbit-size) / 2));
 }
 
-.hv-panel--rows {
-  left: 2%;
-  top: 16%;
-  width: 34%;
-  padding: 4% 4.5%;
-  display: grid;
-  gap: 9%;
-  transform: translateZ(90px) rotateY(14deg);
-}
-
-.hv-panel--bars {
-  right: 0;
-  top: 54%;
-  width: 30%;
-  height: 22%;
-  padding: 3.5% 4%;
-  display: flex;
-  align-items: flex-end;
-  gap: 8%;
-  transform: translateZ(120px) rotateY(-16deg);
-  animation-delay: -3s;
-}
-
-.hv-panel--tree {
-  left: 16%;
-  bottom: 8%;
-  width: 22%;
-  height: 15%;
-  transform: translateZ(60px) rotateX(10deg);
-  animation-delay: -6s;
-}
-
-.hv-dot {
-  width: clamp(8px, 2.6cqi, 14px);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-}
-
-.hv-line {
-  display: block;
-  height: clamp(4px, 1.1cqi, 6px);
+/* counter-rotates the arm + spin and un-tilts, so the chip always faces the viewer */
+.hv-chip {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em 0.95em 0.5em 0.5em;
   border-radius: 999px;
-  background: var(--hv-panel-line);
+  border: 1px solid var(--border-strong);
+  background: var(--surface-strong);
+  box-shadow: var(--shadow), inset 0 1px 0 var(--glass-highlight);
+  color: var(--text);
+  font-size: clamp(0.7rem, 3.4cqi, 0.95rem);
+  font-weight: 600;
+  white-space: nowrap;
+  transform: translate(-50%, -50%) rotateZ(calc(var(--angle) * -1)) rotateX(calc(var(--orbit-tilt) * -1));
+  animation: hv-counter var(--orbit-duration) linear infinite;
 }
 
-.hv-line--w80 {
-  width: 80%;
-}
-.hv-line--w60 {
-  width: 60%;
-}
-.hv-line--w70 {
-  width: 70%;
-}
-
-.hv-bar {
-  flex: 1;
-  border-radius: 3px 3px 1px 1px;
-  background: linear-gradient(180deg, var(--accent), color-mix(in srgb, var(--accent) 30%, transparent));
+.hv-chip__icon {
+  display: inline-grid;
+  place-items: center;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: linear-gradient(140deg, var(--accent), var(--accent-2));
+  color: #fff;
 }
 
-.hv-bar:nth-child(4) {
-  background: linear-gradient(180deg, var(--accent-2), color-mix(in srgb, var(--accent-2) 30%, transparent));
+.hv-chip__icon svg {
+  width: 1.1em;
+  height: 1.1em;
 }
 
-.hv-node {
-  position: absolute;
-  left: 18%;
-  top: 30%;
-  width: 16%;
-  aspect-ratio: 1;
-  border-radius: 30%;
-  background: var(--accent);
-}
-
-.hv-node--sm {
-  left: 62%;
-  top: 18%;
-  width: 12%;
-  background: var(--hv-panel-line);
-}
-
-.hv-node--sm + .hv-node--sm {
-  top: 58%;
-  background: var(--accent-2);
-}
-
-.hv-branch {
-  position: absolute;
-  left: 34%;
-  top: 30%;
-  width: 28%;
-  height: 40%;
-  border: 1px solid var(--hv-panel-line);
-  border-left: 0;
-  border-radius: 0 8px 8px 0;
+@container (max-width: 360px) {
+  .hv-chip {
+    padding: 0.35em 0.75em 0.35em 0.35em;
+  }
 }
 
 /* pause when off-screen */
-.hero-visual.is-paused *,
-.hero-visual.is-paused .hv-network__pulse {
+.hero-visual.is-paused * {
   animation-play-state: paused;
 }
 
@@ -287,23 +174,23 @@
   }
 }
 
-@keyframes hv-float {
-  0%,
-  100% {
-    transform: translate(-50%, -50%) translateZ(40px);
+@keyframes hv-counter {
+  from {
+    transform: translate(-50%, -50%) rotateZ(calc(var(--angle) * -1)) rotateX(calc(var(--orbit-tilt) * -1));
   }
-  50% {
-    transform: translate(-50%, -54%) translateZ(40px);
+  to {
+    transform: translate(-50%, -50%) rotateZ(calc(var(--angle) * -1 - 360deg))
+      rotateX(calc(var(--orbit-tilt) * -1));
   }
 }
 
-@keyframes hv-drift {
+@keyframes hv-float {
   0%,
   100% {
     translate: 0 0;
   }
   50% {
-    translate: 0 -6%;
+    translate: 0 -1.5%;
   }
 }
 
@@ -319,20 +206,16 @@
   }
 }
 
-@keyframes hv-pulse {
-  from {
-    stroke-dashoffset: 560;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
+/* Static fallback: orbit rests at an angle where every chip is in front of the figure. */
 @media (prefers-reduced-motion: reduce) {
   .hero-visual * {
     animation: none !important;
   }
-  .hv-network__pulse {
-    display: none;
+  .hv-orbit__spin {
+    transform: rotate(var(--orbit-rest, 0deg));
+  }
+  .hv-chip {
+    transform: translate(-50%, -50%) rotateZ(calc((var(--angle) + var(--orbit-rest, 0deg)) * -1))
+      rotateX(calc(var(--orbit-tilt) * -1));
   }
 }

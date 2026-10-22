@@ -5,6 +5,7 @@ export type IconName =
   | "delivery"
   | "analytics"
   | "governance"
+  | "consult"
   | "mail"
   | "linkedin"
   | "arrowRight"
@@ -42,6 +43,12 @@ const paths: Record<IconName, JSX.Element> = {
     <>
       <path d="M12 3l8 4.5-8 4.5-8-4.5L12 3z" />
       <path d="M4 12l8 4.5 8-4.5M4 16.5L12 21l8-4.5" />
+    </>
+  ),
+  consult: (
+    <>
+      <path d="M4 5.5h11a2 2 0 012 2V13a2 2 0 01-2 2H9l-4 3v-3H4a2 2 0 01-2-2V7.5a2 2 0 012-2z" />
+      <path d="M19 9h1a2 2 0 012 2v5a2 2 0 01-2 2h-1v2.5L16 18h-4" opacity=".55" />
     </>
   ),
   mail: (

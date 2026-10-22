@@ -19,6 +19,14 @@ export type ThemePreference = (typeof themePreferences)[number];
 export type Localized<T = string> = Record<Language, T>;
 
 export type ServiceIcon = "web" | "delivery" | "analytics" | "governance";
+export type OrbitIcon = "analytics" | "web" | "consult";
+
+/** A focus area orbiting the figure in the hero visual. */
+export interface OrbitItem {
+  id: string;
+  icon: OrbitIcon;
+  label: Localized;
+}
 
 export interface Service {
   id: string;
@@ -77,6 +85,8 @@ export interface SiteConfig {
     /** Portion of the headline to emphasise visually; must appear verbatim in `headline`. */
     headlineEmphasis: Localized;
     description: Localized;
+    /** Focus areas orbiting the figure in the hero visual (best with 3). */
+    orbit: OrbitItem[];
   };
   /** Verified biography paragraphs. Leave empty until real material is provided. */
   biography: Localized<string[]>;
@@ -99,7 +109,7 @@ export const siteConfig: SiteConfig = {
   },
   contact: {
     email: "luongnv@dgna.vn",
-    linkedin: "https://www.linkedin.com/greyng",
+    linkedin: "https://www.linkedin.com/in/greyng/",
   },
   github: {
     username: "greyhub",
@@ -134,6 +144,11 @@ export const siteConfig: SiteConfig = {
       vi: "Từ chiến lược và quản trị dữ liệu đến phân tích, sản phẩm số và triển khai thực tế.",
       en: "From data strategy and governance to analytics, digital products, and delivery.",
     },
+    orbit: [
+      { id: "data", icon: "analytics", label: { vi: "Dữ liệu", en: "Data" } },
+      { id: "creative-web", icon: "web", label: { vi: "Web sáng tạo", en: "Creative Web" } },
+      { id: "consulting", icon: "consult", label: { vi: "Tư vấn", en: "Consulting" } },
+    ],
   },
   biography: {
     vi: [],

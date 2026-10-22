@@ -7,7 +7,7 @@ import { useLanguage } from "../i18n/LanguageContext";
 export function Contact() {
   const { t, pick } = useLanguage();
   const { email, linkedin } = siteConfig.contact;
-  const linkedinDisplay = linkedin.replace(/^https?:\/\/(www\.)?/, "");
+  const linkedinDisplay = linkedin.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
 
   return (
     <section id="contact" className="section contact" aria-labelledby="contact-title">

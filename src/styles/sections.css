@@ -197,7 +197,7 @@
   }
 
   .hero__visual {
-    max-width: min(240px, 64vw);
+    max-width: min(300px, 78vw);
   }
 }
 

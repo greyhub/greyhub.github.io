@@ -271,7 +271,7 @@ export const siteConfig: SiteConfig = {
     { name: "VTX" },
     { name: "Trek Fund" },
     { name: "Vingioco" },
-    { name: "Alobase" },
+    { name: "Vingroup" },
   ],
   caseStudies: [],
   contactCta: {

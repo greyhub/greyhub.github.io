@@ -1,130 +1,61 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="%SITE_LANG%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>%SITE_TITLE%</title>
+    <meta name="description" content="%SITE_DESCRIPTION%" />
+    <meta name="author" content="%SITE_NAME%" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f4f5f8" />
+    <link rel="canonical" href="%SITE_URL%" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>
-		GREY
-	</title>
-	<link rel="shortcut Icon" href="./assets/images/thamp2.png" type="images/png">
-	<!-- Bootstrap-5 CSS -->
-	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-	<!-- wow Animation  -->
-	<link rel="stylesheet" href="./assets/css/animate.css">
-	<!--  Flat Icon CSS -->
-	<link rel="stylesheet" href="./assets/font/flaticon.css">
-	<!--  BoxIcons CSS -->
-	<link rel="stylesheet" href="./assets/css/boxicons.css">
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="./assets/css/main.css">
-	<link rel="stylesheet" href="./assets/css/responsive.css">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="%SITE_URL%" />
+    <meta property="og:site_name" content="%SITE_NAME%" />
+    <meta property="og:title" content="%SITE_TITLE%" />
+    <meta property="og:description" content="%SITE_DESCRIPTION%" />
+    <meta property="og:locale" content="%SITE_OG_LOCALE%" />
+    <meta property="og:locale:alternate" content="%SITE_OG_LOCALE_ALT%" />
+    <meta property="og:image" content="%SITE_URL%og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="%SITE_TITLE%" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="%SITE_TITLE%" />
+    <meta name="twitter:description" content="%SITE_DESCRIPTION%" />
+    <meta name="twitter:image" content="%SITE_URL%og-image.png" />
 
-</head>
-
-<body class="active">
-	<!-- Start Preloader Area -->
-	<div class="preloader">
-		<div class="loader">
-			<div class="bar1 bar"></div>
-			<div class="bar2 bar"></div>
-			<div class="bar3 bar"></div>
-			<div class="bar4 bar"></div>
-			<div class="bar5 bar"></div>
-			<div class="bar6 bar"></div>
-		</div>
-	</div>
-	<!-- End Preloader Area -->
-	<div class="main-wrapper">
-		<!-- Header top Area -->
-		<div class="header-top d-none d-md-block">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
-						<ul class="topbar-social-icon d-flex justify-content-start">
-							<li><a href="https://www.linkedin.com/in/greyng/"><i class='bx bxl-linkedin'></i></a></li>
-							<li><a href="https://www.facebook.com/luongnv.grey/"><i class='bx bxl-facebook'></i></a></li>
-							<li><a href="https://github.com/greyhub"><i class='bx bxl-github'></i></a></li>
-							<li><a href="https://www.youtube.com/@luong5933"><i class='bx bxl-youtube'></i></a></li>
-						</ul>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-						<ul class="topbar-support screen-xl d-flex align-items-center">
-							<li> <a href="tel:+84962037205"><i class="flaticon-call"></i> <span
-										id="phone-number"></span> </a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Header top Area End -->
-
-		<!-- header area start -->
-		<my-header></my-header>
-		<!--  header area end -->
-
-		<!-- Slider area start -->
-		<my-slider></my-slider>
-		<!-- Slider area End -->
-
-		<!-- About us area start -->
-		<my-about></my-about>
-		<!-- About us area End -->
-
-		<!-- Experience area start -->
-		<my-experiences></my-experiences>
-		<!-- Experience b area End -->
-
-		<!-- Services area start -->
-		<my-service></my-service>
-		<!-- Services area End -->
-
-		<!-- Portfolil area start -->
-		<!-- <my-portfolio></my-portfolio> -->
-		<!-- Portfolio area End -->
-
-		<!-- Blog area start -->
-		<!-- <my-blog></my-blog> -->
-		<!-- Blog area End -->
-
-		<!-- Contact area start -->
-		<my-contact></my-contact>
-		<!-- Contact area End -->
-
-		<!-- footer area start -->
-		<my-footer></my-footer>
-		<!-- footer area end -->
-	</div>
-
-	<!--Javascript -->
-	<script src="./assets/js/jquery-2.2.4.min.js"></script>
-	<script src="./assets/js/jquery.min.js"></script>
-	<script src="./assets/js/wow.min.js"></script>
-	<script src="./assets/js/bootstrap.min.js"></script>
-	<script src="./assets/js/popper.min.js"></script>
-	<script src="./assets/js/isotope.pkgd.min.js"></script>
-	<!-- Custom JavaScript -->
-	<script src="./assets/js/info.js"></script>
-	<script src="./assets/js/components/my-header.js"></script>
-	<script src="./assets/js/components/my-slider.js"></script>
-	<script src="./assets/js/components/my-about.js"></script>
-	<script src="./assets/js/components/my-service.js"></script>
-	<script src="./assets/js/components/my-portfolio.js"></script>
-	<script src="./assets/js/components/my-blog.js"></script>
-	<script src="./assets/js/components/my-contact.js"></script>
-	<script src="./assets/js/components/my-experiences.js"></script>
-	<script src="./assets/js/components/my-footer.js"></script>
-	<script src="./assets/js/app.js"></script>
-	<script src="./assets/js/info-fill.js"></script>
-
-	<script>
-		$(function () {
-			$('[data-toggle="tooltip"]').tooltip()
-		})
-	</script>
-</body>
-
+    <!-- Apply stored theme/language before first paint to avoid a flash. -->
+    <script>
+      (function () {
+        var d = document.documentElement;
+        try {
+          var t = localStorage.getItem("%SITE_THEME_KEY%");
+          if (t !== "light" && t !== "dark") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          d.dataset.theme = t;
+          d.style.colorScheme = t;
+          var l = localStorage.getItem("%SITE_LANG_KEY%");
+          if (l && "%SITE_LANGS%".split(",").indexOf(l) > -1) d.lang = l;
+        } catch (e) {
+          d.dataset.theme = "light";
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <p style="padding: 2rem; font-family: system-ui, sans-serif">
+        %SITE_NAME% — %SITE_ROLE% ·
+        <a href="mailto:%SITE_EMAIL%">%SITE_EMAIL%</a> ·
+        <a href="%SITE_LINKEDIN%">LinkedIn</a>
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

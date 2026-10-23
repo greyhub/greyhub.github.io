@@ -1,32 +1,38 @@
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
-import { useLanguage } from "./i18n/LanguageContext";
-import { About } from "./sections/About";
-import { Approach } from "./sections/Approach";
-import { Contact } from "./sections/Contact";
-import { Hero } from "./sections/Hero";
-import { Partners } from "./sections/Partners";
-import { Projects } from "./sections/Projects";
-import { Services } from "./sections/Services";
+import { Hero } from './components/Hero'
+import { Nav } from './components/Nav'
+import { About, Approach, Contact, Footer, Journey, PointOfView, Principles, Services, Work, Writing } from './components/Sections'
+import { ui } from './content/content'
+import { LangProvider, useLang } from './hooks/useLang'
+import { useGlassPointer } from './hooks/useGlassPointer'
 
-export default function App() {
-  const { t } = useLanguage();
+function Page() {
+  const { t } = useLang()
+  useGlassPointer()
   return (
     <>
-      <a href="#main" className="skip-link">
-        {t.a11y.skipToContent}
-      </a>
-      <Header />
-      <main id="main" tabIndex={-1}>
+      <a className="skip" href="#about">{t(ui.skip)}</a>
+      <Nav />
+      <main>
         <Hero />
         <About />
-        <Services />
+        <PointOfView />
         <Approach />
-        <Projects />
-        <Partners />
+        <Services />
+        <Principles />
+        <Journey />
+        <Work />
+        <Writing />
         <Contact />
       </main>
       <Footer />
     </>
-  );
+  )
+}
+
+export default function App() {
+  return (
+    <LangProvider>
+      <Page />
+    </LangProvider>
+  )
 }

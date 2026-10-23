@@ -1,59 +1,44 @@
 <!doctype html>
-<html lang="%SITE_LANG%">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>%SITE_TITLE%</title>
-    <meta name="description" content="%SITE_DESCRIPTION%" />
-    <meta name="author" content="%SITE_NAME%" />
-    <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#f4f5f8" />
-    <link rel="canonical" href="%SITE_URL%" />
+    <title>Grey · Luong Nguyen Van</title>
+    <meta name="description" content="Grey (Luong Nguyen Van) works on enterprise data and AI: data consulting, data training and creative landing pages. CEO & Founder of DGNA." />
+    <meta name="author" content="Luong Nguyen Van (Grey)" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#05080f" />
+    <link rel="canonical" href="https://greyhub.github.io/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="%SITE_URL%" />
-    <meta property="og:site_name" content="%SITE_NAME%" />
-    <meta property="og:title" content="%SITE_TITLE%" />
-    <meta property="og:description" content="%SITE_DESCRIPTION%" />
-    <meta property="og:locale" content="%SITE_OG_LOCALE%" />
-    <meta property="og:locale:alternate" content="%SITE_OG_LOCALE_ALT%" />
-    <meta property="og:image" content="%SITE_URL%og-image.png" />
+    <meta property="og:url" content="https://greyhub.github.io/" />
+    <meta property="og:site_name" content="Grey · Luong Nguyen Van" />
+    <meta property="og:title" content="Grey · Building the Future of Enterprise Data & AI" />
+    <meta property="og:description" content="Data consulting, data training and creative landing pages, for individuals and businesses." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="vi_VN" />
+    <meta property="og:image" content="https://greyhub.github.io/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="%SITE_TITLE%" />
+    <meta property="og:image:alt" content="Grey on a terrace looking over a city of data at night" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="%SITE_TITLE%" />
-    <meta name="twitter:description" content="%SITE_DESCRIPTION%" />
-    <meta name="twitter:image" content="%SITE_URL%og-image.png" />
+    <meta name="twitter:title" content="Grey · Building the Future of Enterprise Data & AI" />
+    <meta name="twitter:description" content="Data consulting, data training and creative landing pages, for individuals and businesses." />
+    <meta name="twitter:image" content="https://greyhub.github.io/og-image.png" />
 
-    <!-- Apply stored theme/language before first paint to avoid a flash. -->
-    <script>
-      (function () {
-        var d = document.documentElement;
-        try {
-          var t = localStorage.getItem("%SITE_THEME_KEY%");
-          if (t !== "light" && t !== "dark") {
-            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-          }
-          d.dataset.theme = t;
-          d.style.colorScheme = t;
-          var l = localStorage.getItem("%SITE_LANG_KEY%");
-          if (l && "%SITE_LANGS%".split(",").indexOf(l) > -1) d.lang = l;
-        } catch (e) {
-          d.dataset.theme = "light";
-        }
-      })();
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Be+Vietnam+Pro:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
   </head>
   <body>
     <div id="root"></div>
     <noscript>
-      <p style="padding: 2rem; font-family: system-ui, sans-serif">
-        %SITE_NAME% — %SITE_ROLE% ·
-        <a href="mailto:%SITE_EMAIL%">%SITE_EMAIL%</a> ·
-        <a href="%SITE_LINKEDIN%">LinkedIn</a>
+      <p style="padding: 2rem; font-family: system-ui, sans-serif; color: #e9edf4; background: #05080f">
+        Grey · Luong Nguyen Van · Data consulting, data training, creative landing pages ·
+        <a href="mailto:luongnv.grey@gmail.com" style="color: #d6b57a">luongnv.grey@gmail.com</a> ·
+        <a href="https://www.linkedin.com/in/greyng/" style="color: #d6b57a">LinkedIn</a>
       </p>
     </noscript>
     <script type="module" src="/src/main.tsx"></script>
